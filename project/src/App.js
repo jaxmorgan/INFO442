@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/NavBar/navbar.js';
 
 export default function App(props) {
   return (

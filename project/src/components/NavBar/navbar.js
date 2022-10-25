@@ -19,7 +19,7 @@ export default function NavBar() {
               />
             </Col>
             <Col>
-              <input type="text" placeholder="Search"/>
+              <input type="text" placeholder="Search.."/>
             </Col>
             <Col>
               <NavLink
