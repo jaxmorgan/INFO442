@@ -5,18 +5,14 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 
 export default function App(props) {
+  // Routes replaces Switch and Navigate replaces Redirect
   return (
     <div className="App">
       <Router>
-          <NavBar />
-          <Routes>
-            <Route path="/Home">
-              
-            </Route>
-            <Route path="/">
-              <Navigate path="/Home" />
-            </Route>
-          </Routes>
+        <NavBar />
+        <Routes>
+        </Routes>
+          
       </Router>
       <footer>
         <div>
