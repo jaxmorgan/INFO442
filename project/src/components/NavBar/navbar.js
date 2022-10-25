@@ -5,7 +5,7 @@ import "../../index.css";
 import { Container, Row, Col } from 'reactstrap';
 
 // Nav bar with both media queries
-export function NavBar() {
+export default function NavBar() {
   return (
     <header>
       <nav>
@@ -19,20 +19,14 @@ export function NavBar() {
               />
             </Col>
             <Col>
-              <NavLink
-                className="active"
-                to="/Home"
-                aria-label="Go to home page"
-              >
-                Home
-              </NavLink>
+              <input type="text" placeholder="Search"/>
             </Col>
             <Col>
               <NavLink
                 to="/Dashboard"
                 aria-label=""
               >
-                Dashboard
+                Account
               </NavLink>
             </Col>
           </Row>
@@ -55,7 +49,7 @@ export function NavBar() {
                 id="dropdownMenuText"
                 aria-label=""
               >
-                Dashboard
+                Accout
               </NavLink>
             </Dropdown.Item>
           </Dropdown.Menu>
