@@ -49,7 +49,7 @@ export default function NavBar() {
                 id="dropdownMenuText"
                 aria-label=""
               >
-                Accout
+                About
               </NavLink>
             </Dropdown.Item>
           </Dropdown.Menu>
