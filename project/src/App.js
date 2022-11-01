@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
 import NavBar from './components/NavBar/navbar.js';
+import Home from './components/Home/home.js';
 
 export default function App(props) {
   // Routes replaces Switch and Navigate replaces Redirect
@@ -10,9 +10,9 @@ export default function App(props) {
     <div className="App">
       <Router>
         <NavBar />
+        <Home prop=""/>
         <Routes>
         </Routes>
-          
       </Router>
       <footer>
         <div>
