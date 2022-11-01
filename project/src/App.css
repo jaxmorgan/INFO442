@@ -2,13 +2,26 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  height: 100px;
+  background-color: #EEFEFA;
 }
 
-.App header {
-  display: inline;
+.logo {
+  max-width: 75%;  
+  height: auto; 
+}
+
+#nav-text {
+  color: #558564;
+  font-size: 20px;
+  font-family: krub, sans-serif;
+  vertical-align:middle;
+}
+
+.App header div{
+  justify-content: space-evenly;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
