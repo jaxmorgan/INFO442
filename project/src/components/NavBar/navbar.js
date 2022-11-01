@@ -8,34 +8,19 @@ import { InputGroup, Button, Input } from 'reactstrap';
 export default function NavBar() {
   return (
     <header>
-      <Nav classname="justify-content-end" defaultActiveKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+      <Nav>
         <Nav.Item>
-          <Dropdown id="dropdownMenuButton">
-            <Dropdown.Toggle variant="success">MENU</Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item>
-                <NavLink
-                  to="/Home"
-                  id="dropdownMenuText"
-                  aria-label="Go to home page"
-                >
-                  Cart
-                </NavLink>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <NavLink
-                  to="/cart"
-                  id="dropdownMenuText"
-                  aria-label=""
-                >
-                  About
-                </NavLink>
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          <img className="logo" src="..\..\..\img\source-logo.png" alt="Source logo" />
         </Nav.Item>
         <Nav.Item>
-          <img src="../../public/SourceLogo.png" alt="Source logo" />
+          <Nav.Link href="/Shop" id="nav-text" aria-label="">
+            Shop
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/About" id="nav-text" aria-label="">
+            About
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <InputGroup>
@@ -46,8 +31,13 @@ export default function NavBar() {
           </InputGroup>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/Dashboard" aria-label="">
+          <Nav.Link href="/Account" id="nav-text" aria-label="">
             Account
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Cart" id="nav-text" aria-label="">
+            Cart
           </Nav.Link>
         </Nav.Item>
       </Nav>
