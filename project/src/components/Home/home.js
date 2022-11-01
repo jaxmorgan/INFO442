@@ -1,25 +1,28 @@
 import React from 'react';
+import Items from '../Items/items';
 
 export default function Home(props) {
 
   return (
-    <div>
-      <header className="header-with-image">
-        <div>
-          <h1 className="big-font">x.</h1>
-          <p className="small-font">X.</p>
-        </div>
+    <main>
+      <header>
+        <h1 className="abouthwelcome">Welcome to Source</h1>
       </header>
+      <div className="flex-container">
+      <Items />
+      </div>
 
-      <main>
-        <section>
-          <div className="job-help">
-            <div className="item"><a href="" target="blank">X</a></div>
-            <div className="item"><a href="" target="blank">Y</a></div>
-            <div className="item"><a href="" target="blank">Z</a></div>
-          </div>
-        </section>
-      </main>
-    </div>
+
+      <footer>
+        <div>
+          <p>An E-Commerce Platform</p>
+          <p><a href="mailto:informatics@uw.edu"><span>Email:</span> informatics@uw.edu</a></p>
+          <p>&copy; 2022 INFO442 Project</p>
+        </div>
+      </footer>
+    </main>
+
+
+
   )
 }
