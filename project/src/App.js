@@ -3,6 +3,7 @@ import logo from './';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
 import NavBar from './components/NavBar/navbar.js';
+import About from './components/About/about.js';
 
 export default function App(props) {
   // Routes replaces Switch and Navigate replaces Redirect
