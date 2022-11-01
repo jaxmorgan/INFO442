@@ -24,7 +24,7 @@ export default function NavBar() {
         </Nav.Item>
         <Nav.Item>
           <InputGroup>
-            <Input placeholder="Search..........."/>
+            <Input placeholder="Search"/>
             <Button>
               Search it up lol
             </Button>
