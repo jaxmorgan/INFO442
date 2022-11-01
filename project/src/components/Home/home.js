@@ -6,7 +6,7 @@ export default function Home(props) {
   return (
     <main>
       <header>
-        <h1 className="abouthwelcome">Welcome to Source</h1>
+        <img className="homeImage" src="../../../img/callan-sofa-resized.jpg"/>
       </header>
       <div className="flex-container">
       <Items />
