@@ -8,11 +8,32 @@ export default function Home(props) {
   return (
     <main>
       <header>
-        <img className="homeImage" src="../../../img/callan-sofa-resized.jpg"/>
       </header>
-      <div className="flex-container">
+
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+      <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../../img/callan-sofa-resized.jpg" class="homeImage" alt="Wild Landscape"/>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../img/wood-coffee-table.webp" class="homeImage" alt="Camera"/>
+    </div>
+    <div class="carousel-item">
+      <img src="../../../img/wood-stool.webp" class="homeImage" alt="Exotic Fruits"/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
       <Items />
-      </div>
 
       <div>
       <JobSelectForm />
@@ -20,14 +41,11 @@ export default function Home(props) {
 
       <footer>
         <div>
-          <p>An E-Commerce Platform</p>
-          <p><a href="mailto:informatics@uw.edu"><span>Email:</span> informatics@uw.edu</a></p>
+          <p>Source</p>
           <p>&copy; 2022 INFO442 Project</p>
         </div>
       </footer>
     </main>
-
-
 
   )
 }

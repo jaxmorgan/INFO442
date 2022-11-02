@@ -26,7 +26,7 @@ export default function NavBar() {
           <InputGroup className="headerSearch">
             <Input placeholder="Search"/>
             <Button>
-              Search it up lol
+              Go
             </Button>
           </InputGroup>
         </Nav.Item>
