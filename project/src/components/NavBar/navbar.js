@@ -23,7 +23,7 @@ export default function NavBar() {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <InputGroup>
+          <InputGroup className="headerSearch">
             <Input placeholder="Search"/>
             <Button>
               Search it up lol
