@@ -21,3 +21,11 @@ code {
 footer {
   color: green;
 }
+
+.form1 {
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 30px;
+}
