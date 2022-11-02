@@ -8,7 +8,6 @@ export default function Items(props) {
                 <img src={props.img} className="card-img-top" alt={props.id}></img>
                 <div className="card-body">
                     <h2 className="card-title">{props.name}</h2>
-                    <p className="card-text">Maker: {props.supplier}</p>
 
                 </div>
             </div>

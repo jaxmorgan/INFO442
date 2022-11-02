@@ -7,6 +7,7 @@ import Home from './components/Home/home.js';
 import Items from './components/Items/items';
 import { ItemsContent } from "./data/productsData";
 
+
 export default function App(props) {
   // Routes replaces Switch and Navigate replaces Redirect
   return (
@@ -14,7 +15,6 @@ export default function App(props) {
       <Router>
         <NavBar />
         <Home />
-
 
 
         <Routes>

@@ -1,5 +1,7 @@
 import React from 'react';
 import Items from '../Items/items';
+import JobSelectForm from './sidefilter';
+
 
 export default function Home(props) {
 
@@ -12,6 +14,9 @@ export default function Home(props) {
       <Items />
       </div>
 
+      <div>
+      <JobSelectForm />
+      </div>
 
       <footer>
         <div>
