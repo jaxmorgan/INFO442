@@ -9,7 +9,7 @@ export default function JobSelectForm(props) {
       <div className="search">
         <form className="form1">
           <label htmlFor="text-input" className="big">Item Search</label>
-          <input className="text specificity" name="text" type="text" id="text-input" placeholder="Search company, job title..." />
+          <input className="text specificity" name="text" type="text" id="text-input" placeholder="Search product..." />
 
           <fieldset>
             <legend>Product Filters</legend>

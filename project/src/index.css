@@ -29,3 +29,56 @@ footer {
   margin-right: 100px;
   padding-bottom: 30px;
 }
+
+.search {
+  width: 400px;
+  padding-bottom: 10px;
+  border-color: green;
+  border-style: solid;
+  margin-top: 25px;
+  margin-left: 10px;
+  background-color: rgb(193, 219, 193);
+}
+
+.big {
+  font-size: 20px;
+}
+
+.check-container {
+  margin-top: 10px;
+}
+
+.check {
+  font-size: 16px;
+  display: block;
+  margin: 8px;
+}
+
+.type {
+  font-size: 16px;
+  display: block;
+  margin: 7px;
+  margin-top: 20px;
+}
+
+.type-option {
+  width: 200px;
+  padding: 10px;
+}
+
+input[type='checkbox'] {
+  padding-left: 5px;
+  margin: 10px;
+}
+
+#text-input {
+  margin-left: 10px;
+}
+
+legend {
+  font-size: 20px;
+}
+
+input{
+  margin-bottom: 10px;
+}
