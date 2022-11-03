@@ -9,6 +9,29 @@ export default function Home(props) {
     <main>
       <header>
       </header>
+      <div class="container">
+   <div class="d-flex flex-row">
+      <div class="d-flex flex-column">
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+      </div>
+      <div class="d-flex flex-column">
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+      </div>
+      <div class="d-flex flex-column">
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+      </div>
+      <div class="d-flex flex-column">
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+         <img src="../../../img/callan-sofa-resized.jpg" class="img-fluid"/>
+      </div>
+   </div>
+</div>
+
+
+
 
       <script src="bootstrap/js/bootstrap.min.js"></script>
 
