@@ -10,7 +10,7 @@ export default function NavBar() {
     <header>
       <Nav>
         <Nav.Item>
-          <img className="logo" src="..\..\..\img\source-logo.png" alt="Source logo" />
+          <a href="/Home" ><img className="logo" src="..\..\..\img\source-logo.png" alt="Source logo" /></a>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/Shop" id="nav-text" aria-label="">
