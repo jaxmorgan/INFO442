@@ -179,6 +179,14 @@ p {
   color: green;
 }
 
+.aboutImage {
+  height: 500px;
+  padding-bottom: 30px;
+}
+
+.about-content {
+  background-color: rgb(226, 240, 226);
+}
 
 /* responsive design for larger screens */
 @media (min-width: 768px) {

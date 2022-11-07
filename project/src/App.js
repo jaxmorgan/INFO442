@@ -19,6 +19,7 @@ export default function App(props) {
           <Route path="/Home" element={<Home />} />
           <Route path="/" render={() => <Navigate to="/Home" />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Shop" element={<Home />} />
         </Routes>        
       </Router>
 
