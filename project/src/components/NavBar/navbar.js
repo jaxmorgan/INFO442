@@ -3,12 +3,26 @@ import { NavLink } from "react-router-dom";
 import { Dropdown, Nav } from "react-bootstrap";
 import "../../index.css";
 import { InputGroup, Button, Input } from 'reactstrap';
+import { useState } from "react"
+
 
 // Nav bar with both media queries
 export default function NavBar() {
+
+    // hamburger menu for smaller screen size
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const handleToggle = () => {
+      setHamburgerOpen(previousValue => !previousValue)
+    }
+
+
   return (
     <header>
+      <div className="container">
+      <div className="navbar">  
       <Nav>
+      <button className="hamburgerButton" state={hamburgerOpen ? "Close" : "Open"} onClick={handleToggle}><img src="img/hamburger-icon.png" className="ham-icon" alt="hamburger icon" /></button>
         <Nav.Item>
           <a href="/Home" ><img className="logo" src="..\..\..\img\source-logo.png" alt="Source logo" /></a>
         </Nav.Item>
@@ -41,6 +55,8 @@ export default function NavBar() {
           </Nav.Link>
         </Nav.Item>
       </Nav>
+      </div>
+      </div>
     </header>
   );
 }

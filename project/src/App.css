@@ -129,3 +129,85 @@
   margin: 25px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.16),0 1px 3px rgba(0,0,0,0.23);
 }
+
+.flex-item {
+  flex: 0 0 33.333333%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+.ham-navigator {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+}
+
+.ham-icon {
+  display: inline-block;
+  width: 40px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.hamburgerButton {
+  padding: 0px;
+  border: 0px;
+  height: 42.500px;
+}
+
+/* responsive design for larger screens */
+@media (min-width: 768px) {
+
+.two-col-container {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.search {
+  width: 400px;
+  padding-bottom: 10px;
+  border-color: #AAB8C6;
+  border-style: solid;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.text.specificity {
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.check-container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.check {
+  font-size: 16px;
+  display: block;
+  margin: 8px;
+}
+
+.check-input-intern {
+margin: 8px;
+}
+
+#check-input-full {
+margin: 8px;
+}
+
+#check-input-part {
+margin: 8px;
+}
+
+}

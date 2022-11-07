@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import { nanoid } from 'nanoid'
 
-export default function JobSelectForm(props) {
+export default function SideFilter(props) {
 
   return (
     <section>

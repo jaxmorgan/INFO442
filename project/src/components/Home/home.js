@@ -1,7 +1,7 @@
 import React from 'react';
 import Items from '../Items/items';
 import Item from '../Items/items';
-import JobSelectForm from './sidefilter';
+import SideFilter from './sidefilter';
 
 export default function Home(props) {
 
@@ -14,10 +14,19 @@ export default function Home(props) {
     <img class="homeImg" src="../../../img/wood-stool.webp"/>
   </div>
   </div>
-      <Items />
+  
+  <div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+    <SideFilter />
+    </div>
+    <div class="col">
+    <Items />
+    </div>
+  </div>
+  </div>
 
       <div>
-      <JobSelectForm />
       </div>
 
       <footer>
