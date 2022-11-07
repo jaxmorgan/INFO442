@@ -22,7 +22,7 @@ export default function NavBar() {
       <div className="container">
       <div className="navbar">  
       <Nav>
-      <button className="hamburgerButton" state={hamburgerOpen ? "Close" : "Open"} onClick={handleToggle}><img src="img/hamburger-icon.png" className="ham-icon" alt="hamburger icon" /></button>
+      <button className="hamburgerButton" state={hamburgerOpen ? "Close" : "Open"} onClick={handleToggle}><img src="img/hamburger.jpg" className="ham-icon" alt="hamburger icon" /></button>
         <Nav.Item>
           <a href="/Home" ><img className="logo" src="..\..\..\img\source-logo.png" alt="Source logo" /></a>
         </Nav.Item>

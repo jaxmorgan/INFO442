@@ -18,6 +18,7 @@ export default function App(props) {
           <Route index element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/" render={() => <Navigate to="/Home" />} />
+          <Route path="/About" element={<About />} />
         </Routes>        
       </Router>
 

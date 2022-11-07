@@ -19,6 +19,10 @@
   vertical-align:middle;
 }
 
+p {
+  font-family: krub, sans-serif;
+}
+
 .App header div{
   justify-content: space-evenly;
 
@@ -160,6 +164,21 @@
   border: 0px;
   height: 42.500px;
 }
+
+.big-font {
+  padding-top: 50px;
+}
+
+.about-content {
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.about-categories {
+  color: green;
+}
+
 
 /* responsive design for larger screens */
 @media (min-width: 768px) {
