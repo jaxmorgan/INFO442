@@ -8,11 +8,10 @@ export default function SideFilter(props) {
     <section>
       <div className="search">
         <form className="form1">
-          <label htmlFor="text-input" className="big">Item Search</label>
           <input className="text-specificity" name="text" type="text" id="text-input" placeholder="Search product..." />
 
           <fieldset>
-            <legend>Product Filters</legend>
+            <legend class="product-filters">Filter By</legend>
             <div className="check-container">
               <label className="check" htmlFor="check-input-intern">Used
                 <input type="checkbox" name="checkbox" id="check-input-intern"/>
