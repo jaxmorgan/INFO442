@@ -1,13 +1,25 @@
 import React from 'react';
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { nanoid } from 'nanoid'
 
 export default function SideFilter(props) {
 
+  // let [searchParams, setSearchParams] = useSearchParams();
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    // The serialize function here would be responsible for
+    // creating an object of { key: value } pairs from the
+    // fields in the form that make up the query.
+    // let params = serializeFormQuery(event.target);
+    // setSearchParams(params);
+  }
+
   return (
     <section>
       <div className="search">
-        <form className="form1">
+        <form className="form1" >
           <input className="text-specificity" name="text" type="text" id="text-input" placeholder="Search for a product..." />
 
           <fieldset>
@@ -31,8 +43,9 @@ export default function SideFilter(props) {
             </div>
             <div>
               <label className="type" htmlFor="role">Price Range</label>
-              <select className="type-option" id="role" name="role" />
+              <select className="type-option" id="role" name="role">
                 <option value="">-</option>
+              </select>
             </div>
           </div>
         </form>
