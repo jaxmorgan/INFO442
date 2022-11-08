@@ -8,7 +8,7 @@ export default function Item(props) {
                 <img src={props.img} className="card-img-top" alt={props.id}></img>
                 <div className="card-body">
                     <h2 className="card-title">{props.name}</h2>
-                    <p className="card-text"> Price: {props.price}</p>
+                    <p className="card-text-price">{props.price}</p>
                     <p className="card-text"> Delivery: {props.delivery}</p>
                     <p className="card-text"> Supplier: {props.supplier}</p>
                     <button className="cart-button" onclick="submit()"><img className="add-to-cart" src="..\..\..\img\cart-icon.png"/></button>

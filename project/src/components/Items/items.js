@@ -4,7 +4,7 @@ const ItemsContent = [{
   
     "name":"Penn Chair", 
     "type":"chair", 
-    "price":"$349",
+    "price":"$349.99",
     "delivery":"1-2 days",
     "img":"./img/penn-chair-o.jpg", 
     "id":"1", 
@@ -14,7 +14,7 @@ const ItemsContent = [{
   
     {"name":"The City Table", 
     "type":"table", 
-    "price":"$595",
+    "price":"$595.99",
     "delivery":"Next Day",
     "img":"./img/city-table.webp", 
     "id":"2", 
@@ -24,7 +24,7 @@ const ItemsContent = [{
   
     {"name":"Chella Hanging Mirror", 
     "type":"decoration", 
-    "price":"$199",
+    "price":"$199.99",
     "delivery":"4 days",
     "img":"./img/mirror.webp", 
     "id":"3", 
@@ -34,7 +34,7 @@ const ItemsContent = [{
   
     {"name":"Ason Sofa", 
     "type":"sofa", 
-    "price":"$1971",
+    "price":"$1,971.99",
     "delivery":"2-4 days",
     "img":"./img/ason-sofa.webp", 
     "id":"4", 
@@ -44,7 +44,7 @@ const ItemsContent = [{
   
     {"name":"Dean Nightstand", 
     "type":"table", 
-    "price":"$465",
+    "price":"$465.99",
     "delivery":"5-7 days",
     "img":"./img/nightstand.jpg", 
     "id":"5", 
@@ -54,7 +54,7 @@ const ItemsContent = [{
   
     {"name":"Espresso Otto Dining Chair", 
     "type":"chair", 
-    "price":"$179",
+    "price":"$179.99",
     "delivery":"1-2 days",
     "img":"./img/otto-side-chair.jpg", 
     "id":"6", 
@@ -64,7 +64,7 @@ const ItemsContent = [{
   
     {"name":"Twin Haven Bed Frame", 
     "type":"bed", 
-    "price":"$1099",
+    "price":"$1,099.99",
     "delivery":"2 weeks",
     "img":"./img/twin-haven-bed.jpg", 
     "id":"7", 
@@ -74,7 +74,7 @@ const ItemsContent = [{
   
     {"name":"Avocado Wood Stool", 
     "type":"table", 
-    "price":"$329",
+    "price":"$329.99",
     "delivery":"3 days",
     "img":"./img/avocado-wood-stool.webp", 
     "id":"8", 
@@ -84,7 +84,7 @@ const ItemsContent = [{
   
     {"name":"The Cloud Bed", 
     "type":"bed", 
-    "price":"$600",
+    "price":"$600.99",
     "delivery":"10 days",
     "img":"./img/thuma-bed.webp", 
     "id":"9", 
@@ -94,7 +94,7 @@ const ItemsContent = [{
   
     {"name":"Bend Wall Shelf", 
     "type":"organization", 
-    "price":"$149",
+    "price":"$149.99",
     "delivery":"1-2 days",
     "img":"./img/hooks.webp", 
     "id":"10", 
@@ -104,7 +104,7 @@ const ItemsContent = [{
   
     {"name":"Wood Coffee Table", 
     "type":"table", 
-    "price":"$599",
+    "price":"$599.99",
     "delivery":"4 days",
     "img":"./img/Avocado-Wood-Coffee-Table.webp", 
     "id":"11", 
@@ -114,7 +114,7 @@ const ItemsContent = [{
   
     {"name":"Natural Wood Dresser", 
     "type":"dresser", 
-    "price":"$2799",
+    "price":"$2,799.99",
     "delivery":"1 week",
     "img":"./img/natural-wood-dresser.webp", 
     "id":"12", 
@@ -124,7 +124,7 @@ const ItemsContent = [{
   
     {"name":"Malibu Wood Dresser", 
     "type":"dresser", 
-    "price":"$1939",
+    "price":"$1,939.99",
     "delivery":"1-2 days",
     "img":"./img/malibu-wood-dresser.webp", 
     "id":"13", 
@@ -134,7 +134,7 @@ const ItemsContent = [{
   
     {"name":"Yamazaki Rolling Cart", 
     "type":"organization", 
-    "price":"$72",
+    "price":"$72.99",
     "delivery":"2 days",
     "img":"./img/rolling-storage-cart.jpg", 
     "id":"14", 
@@ -144,7 +144,7 @@ const ItemsContent = [{
   
     {"name":"Callan Sofa", 
     "type":"sofa", 
-    "price":"$749",
+    "price":"$749.99",
     "delivery":"12 days",
     "img":"./img/callan-sofa.jpg", 
     "id":"15", 
@@ -154,7 +154,7 @@ const ItemsContent = [{
   
     {"name":"Mid-Century Dresser", 
     "type":"dresser", 
-    "price":"$1399",
+    "price":"$1,399.99",
     "delivery":"4 days",
     "img":"./img/mid-century-dresser.jpg", 
     "id":"16", 
@@ -164,7 +164,7 @@ const ItemsContent = [{
   
     {"name":"The Essential Sofa", 
     "type":"sofa", 
-    "price":"$1395",
+    "price":"$1,395.99",
     "delivery":"3 weeks",
     "img":"./img/the-essential-sofa.png", 
     "id":"17", 
@@ -174,7 +174,7 @@ const ItemsContent = [{
   
     {"name":"The Cozy Side Table", 
     "type":"table", 
-    "price":"$295",
+    "price":"$295.99",
     "delivery":"8 days",
     "img":"./img/the-side-table.webp", 
     "id":"18", 
