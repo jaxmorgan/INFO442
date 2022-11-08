@@ -155,6 +155,27 @@ a {
   margin: 0px;
 }
 
+.add-to-cart {
+  border-radius: 25%;
+}
+
+.supplier-button {
+  margin-left: 15px;
+  padding-bottom: 5px;
+  height: 50px;
+  background-color: lightgray;
+  border: none;
+  font-family: krub, sans-serif;
+}
+
+.supplier-button a {
+  color: black;
+}
+
+.supplier-button a:link, .supplier-button a:visited, .supplier-button a:hover, .supplier-button a:active {
+  text-decoration: none;
+}
+
 /*End of Home Search */
 
 /*footer */
@@ -444,7 +465,9 @@ font-weight: bold;
 .card-text {
   font-family: krub, sans-serif;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  padding-left: 12px;
+  padding-top: 0px;
 }
 
 .card {
