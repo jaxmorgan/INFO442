@@ -147,7 +147,8 @@ a {
 
 /*footer */
 footer {
-  background-color: darkgreen;
+  background-color: rgb(223, 240, 223);
+  color: black;
 }
 
 /*Home Image + content */
