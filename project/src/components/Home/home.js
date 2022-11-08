@@ -7,13 +7,13 @@ export default function Home(props) {
 
   return (
     <main>
-      <header>
+      <header className="column-container">
+        <div>
+        <div class="text-block">
+    <div className="item">Shop Sustainably</div>
+  </div>
+        </div>
       </header>
-  <div class="row">
-  <div class="column">
-    <img class="homeImg" src="../../../img/wood-stool.webp"/>
-  </div>
-  </div>
   
   <div class="container">
   <div class="row align-items-start">

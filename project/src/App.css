@@ -115,10 +115,59 @@ a {
 
 /*end of navbar */
 
+/*Home Search */
+.search {
+  width: 400px;
+  padding-bottom: 10px;
+  border-color: gray;
+  border-radius: 5%;
+  border-style: solid;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+/*End of Home Search */
+
 /*footer */
 footer {
   background-color: darkgreen;
 }
+
+/*Home Image + content */
+
+.column-container {
+  opacity: 0.85;
+  background-image: url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1092&q=80');
+  width: 100%;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.item { 
+  text-align: center;
+  box-sizing: content-box;
+  width: 25%;
+  border-style: solid;
+  color: black;
+  border-color: darkslategray;
+  margin: 15px 25px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background: rgb(195, 224, 195);
+  border-radius: 25px;
+}
+
+/*End of Home Image + content */
 
 /*About */
 .aboutImage {
@@ -216,10 +265,6 @@ footer {
   width: 100%;
 }
 
-.homeImg {
-  height: 1000px;
-}
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -240,7 +285,8 @@ footer {
 .search {
   width: 400px;
   padding-bottom: 10px;
-  border-color: #AAB8C6;
+  border-color: gray;
+  border-radius: 5%;
   border-style: solid;
   margin-top: 25px;
   margin-left: 10px;
@@ -352,6 +398,15 @@ padding-bottom: 25px;
 color: darkgreen;
 }
 
+/*Home Image */
+.homeImage {
+  height: 400px;
+  width: 75%;
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 0.4;
+}
+
 /*About */
 .aboutImage {
   height: 700px;
@@ -376,4 +431,41 @@ color: green;
   background-color: rgb(223, 240, 223);
 }
 /*End of About */
+
+/*Home */
+.item {
+  margin: 20px 30px;
+  padding: 15px 20px;
+}
+/*End of Home */
+
+/*Home Image + content */
+
+.column-container {
+  opacity: 0.85;
+  background-image: url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1092&q=80');
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-size: cover;
+  background-position: center;
+}
+}
+
+@media (min-width: 900px) {
+  /*Home Image */
+.homeImage {
+  height: 500px;
+  width: 100%;
+  opacity: 0.4;
+}
+}
+
+@media (min-width: 1300px) {
+  /*Home Image */
+.homeImage {
+  height: 700px;
+  width: 100%;
+  opacity: 0.4;
+}
 }
