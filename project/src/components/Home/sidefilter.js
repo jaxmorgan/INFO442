@@ -17,7 +17,7 @@ export default function SideFilter(props) {
   }
 
   return (
-    <section>
+    <section className="search-template">
       <div className="search">
         <form className="form1" >
           <input className="text-specificity" name="text" type="text" id="text-input" placeholder="Search for a product..." />
@@ -35,8 +35,14 @@ export default function SideFilter(props) {
           </fieldset>
                     
           <div>
+          <div>
+              <label className="type" htmlFor="location">Product Type</label>
+              <select className="type-option" id="location" name="location">
+                <option value="">-</option>
+              </select>
+            </div>
             <div>
-              <label className="type" htmlFor="location">Company</label>
+              <label className="type" htmlFor="location">Supplier</label>
               <select className="type-option" id="location" name="location">
                 <option value="">-</option>
               </select>
