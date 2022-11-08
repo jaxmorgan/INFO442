@@ -7,8 +7,9 @@ return (
       <header className="header-with-image">
         <div className="about-content">
           <h1 className="big-font">About Source</h1>
-          <img class="aboutImage" src="../../../img/connectwithnature.jpg"/>
-          <p className="small-font">Source is on a mission to connect you with sustainable businesses for all of your home goods needs. We are committed to improving the current state of e-commerce through eliminating unsustainable consumer habits and mass production practices.</p>
+          <img class="aboutImage" src="../../../img/about-image.jpg"/>
+          <div class="about-text">
+          <p className="small-font-spacing">Source is on a mission to connect you with sustainable businesses for all of your home goods needs. We are committed to improving the current state of e-commerce through eliminating unsustainable consumer habits and mass production practices.</p>
           <p className="small-font">Our supplies are manually verified businesses who meet our minimum threshold requirements for sustainability. So, what do we look at specifically when it comes to our products and suppliers?:</p>
           <ul>
             <p><a className="about-categories" href="https://www.epa.gov/sustainability/sustainable-manufacturing#:~:text=Sustainable%20manufacturing%20is%20the%20creation,employee%2C%20community%20and%20product%20safety.">Manufacturing processes</a></p>
@@ -27,8 +28,15 @@ return (
           </ul>
           
           <p>When you shop on Source, you can be assured that you’re making purchases that are good for the planet.</p>
+          </div>
         </div>
       </header>
+      <footer>
+        <div>
+          <p>Source</p>
+          <p>&copy; 2022 INFO442 Project</p>
+        </div>
+      </footer>
     </div>
   )
 }

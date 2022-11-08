@@ -7,11 +7,6 @@
   background-color: #EEFEFA;
 }
 
-.logo {
-  max-width: 75%;  
-  height: auto; 
-}
-
 #nav-text {
   color: #558564;
   font-size: 20px;
@@ -27,6 +22,128 @@ p {
   justify-content: space-evenly;
 
 }
+
+/* navbar of all pages */
+.nav-container {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(230, 255, 230);
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+}
+
+.logo {
+  width: 250px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  display: inline-block;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.navigator {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: green;
+  font-size: 20px;
+  font-family: krub, sans-serif;
+}
+
+.ham-navigator {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+}
+
+.ham-icon {
+  display: inline-block;
+  width: 70px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.hamburgerButton {
+  padding: 0px;
+  border: 0px;
+  height: 42.500px;
+}
+
+.menuNav {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  background: rgb(195, 224, 195);
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  margin-top: 7px;
+  padding: 0;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+a {
+  display: block;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+/*end of navbar */
+
+/*footer */
+footer {
+  background-color: darkgreen;
+}
+
+/*About */
+.aboutImage {
+  height: 300px;
+  width: 100%;
+  padding-bottom: 30px;
+  }
+
+.about-content {
+    text-align: center;
+    background-color: rgb(223, 240, 223);
+  }
+
+  .big-font {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: darkgreen;
+    }
+
+    .about-text {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+/*End of About */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -90,8 +207,7 @@ p {
   flex: 25%;
   max-width: 25%;
   padding: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+
 }
 
 .column img {
@@ -110,82 +226,6 @@ p {
     flex: 50%;
     max-width: 50%;
   }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 50%;
-  }
-}
-
-.card-title, .card-text {
-  font-family: krub, sans-serif;
-}
-
-.card {
-  flex: 0, 0, 200px;
-  background-color: white;
-  width: 250px;
-  height: 295px;
-  border-radius: 10px;
-  margin: 25px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.16),0 1px 3px rgba(0,0,0,0.23);
-}
-
-.flex-item {
-  flex: 0 0 33.333333%;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-}
-
-.ham-navigator {
-  display: block;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  position: absolute;
-}
-
-.ham-icon {
-  display: inline-block;
-  width: 40px;
-  margin-bottom: 7px;
-  cursor: pointer;
-}
-
-.hamburgerButton {
-  padding: 0px;
-  border: 0px;
-  height: 42.500px;
-}
-
-.big-font {
-  padding-top: 50px;
-}
-
-.about-content {
-  text-align: center;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.about-categories {
-  color: green;
-}
-
-.aboutImage {
-  height: 500px;
-  padding-bottom: 30px;
-}
-
-.about-content {
-  background-color: rgb(226, 240, 226);
 }
 
 /* responsive design for larger screens */
@@ -237,4 +277,103 @@ margin: 8px;
 margin: 8px;
 }
 
+  /* navbar */
+  .nav-container {
+    padding-top: 5px;
+    height: 100px;
+    width: 100%;
+}
+
+.logo {
+    width: 250px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.navigator {
+    display: block;
+    font-size: 25px;
+    font-family: krub, sans-serif;
+}
+
+.ham-icon {
+  display: none;
+}
+
+nav ul li a:hover {
+  color: #AAB8C6;
+}
+
+.menuNav {
+right: 10px;
+width: 400px;
+position: relative;
+background-color: transparent;
+display: inline-block;
+overflow: visible;
+margin-bottom: 20px;
+}
+
+/*end of nav */ 
+.column {
+  flex: 100%;
+  max-width: 50%;
+}
+
+.card-title, .card-text {
+font-family: krub, sans-serif;
+}
+
+.card {
+flex: 0, 0, 200px;
+background-color: white;
+width: 250px;
+height: 295px;
+border-radius: 10px;
+margin: 25px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.16),0 1px 3px rgba(0,0,0,0.23);
+}
+
+.flex-item {
+flex: 0 0 33.333333%;
+}
+
+.big-font {
+padding-top: 25px;
+padding-bottom: 25px;
+color: darkgreen;
+}
+
+/*About */
+.aboutImage {
+  height: 700px;
+  width: 100%;
+  padding-bottom: 30px;
+  }
+
+.about-content {
+text-align: center;
+}
+
+.about-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-categories {
+color: green;
+}
+
+.about-content {
+  background-color: rgb(223, 240, 223);
+}
+/*End of About */
 }

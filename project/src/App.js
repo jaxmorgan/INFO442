@@ -11,7 +11,7 @@ import { ItemsContent } from "./data/productsData";
 export default function App(props) {
   // Routes replaces Switch and Navigate replaces Redirect
   return (
-    <div className="App">
+    <div>
       <Router>
         <NavBar />
         <Routes>
