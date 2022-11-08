@@ -52,7 +52,7 @@ const ItemsContent = [{
     "supplierLink":"https://www.haikudesigns.com/dean-nightstand", 
     "addedToCart":"No"},
   
-    {"name":"Espresso Otto Dining Chair in Rose Quartz", 
+    {"name":"Espresso Otto Dining Chair", 
     "type":"chair", 
     "price":"$179",
     "delivery":"1-2 days",
@@ -62,7 +62,7 @@ const ItemsContent = [{
     "supplierLink":"https://insideweather.com/products/oo1110it-espresso-otto-dining-chair-in-rose-quartz", 
     "addedToCart":"No"},
   
-    {"name":"Twin Haven Bed Frame in Espresso", 
+    {"name":"Twin Haven Bed Frame", 
     "type":"bed", 
     "price":"$1099",
     "delivery":"2 weeks",
@@ -72,7 +72,7 @@ const ItemsContent = [{
     "supplierLink":"https://insideweather.com/products/he101311ci-twin-haven-bed-frame-in-espresso", 
     "addedToCart":"No"},
   
-    {"name":"Wood Stool", 
+    {"name":"Avocado Wood Stool", 
     "type":"table", 
     "price":"$329",
     "delivery":"3 days",
@@ -82,7 +82,7 @@ const ItemsContent = [{
     "supplierLink":"https://www.avocadogreenmattress.com/products/zero-waste-wood-stool?utm_medium=cpc&utm_source=google&gclid=CjwKCAjwwL6aBhBlEiwADycBIAflfYJII5_7Dt7R8kHMBFwU8brhJnQAGZMjkTZ4OawM8Ng8_-RX2hoCsekQAvD_BwE", 
     "addedToCart":"No"},
   
-    {"name":"The Bed", 
+    {"name":"The Cloud Bed", 
     "type":"bed", 
     "price":"$600",
     "delivery":"10 days",
@@ -92,7 +92,7 @@ const ItemsContent = [{
     "supplierLink":"https://www.thuma.co/products/the-bed?currency=USD&variant=12320329400425&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=CjwKCAjwwL6aBhBlEiwADycBIEz6TIJn5uCz7LXd61sJmneajix5jiw8RiJkvZIUBN-Oh2FOa1xNwBoCuCoQAvD_BwE", 
     "addedToCart":"No"},
   
-    {"name":"Bend Wall Shelf With Hooks", 
+    {"name":"Bend Wall Shelf", 
     "type":"organization", 
     "price":"$149",
     "delivery":"1-2 days",
@@ -132,7 +132,7 @@ const ItemsContent = [{
     "supplierLink":"https://www.avocadogreenmattress.com/collections/beds-furniture-1/products/malibu-wood-dresser", 
     "addedToCart":"No"},
   
-    {"name":"Yamazaki Slim Rolling Storage Cart", 
+    {"name":"Yamazaki Rolling Cart", 
     "type":"organization", 
     "price":"$72",
     "delivery":"2 days",
@@ -152,7 +152,7 @@ const ItemsContent = [{
     "supplierLink":"https://www.westelm.com/products/callan-sofa-h11443/?pkey=csofas", 
     "addedToCart":"No"},
   
-    {"name":"Mid-Century 6-Drawer Dresser", 
+    {"name":"Mid-Century Dresser", 
     "type":"dresser", 
     "price":"$1399",
     "delivery":"4 days",
@@ -172,7 +172,7 @@ const ItemsContent = [{
     "supplierLink":"https://sabai.design/products/the-essential-sofa-last?variant=41352768913568", 
     "addedToCart":"No"},
   
-    {"name":"The Side Table", 
+    {"name":"The Cozy Side Table", 
     "type":"table", 
     "price":"$295",
     "delivery":"8 days",
