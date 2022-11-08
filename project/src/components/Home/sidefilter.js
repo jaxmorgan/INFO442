@@ -8,7 +8,7 @@ export default function SideFilter(props) {
     <section>
       <div className="search">
         <form className="form1">
-          <input className="text-specificity" name="text" type="text" id="text-input" placeholder="Search product..." />
+          <input className="text-specificity" name="text" type="text" id="text-input" placeholder="Search for a product..." />
 
           <fieldset>
             <legend class="product-filters">Filter By</legend>

@@ -123,13 +123,24 @@ a {
   border-radius: 5%;
   border-style: solid;
   margin-top: 25px;
-  margin-left: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .text-specificity {
   height: 50px;
   position: absolute;
   padding-left: 8px;
+}
+
+
+.check {
+  font-size: 20px;
+  font-family: krub, sans-serif;
+  display: block;
+  margin: 8px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 /*End of Home Search */
@@ -177,6 +188,16 @@ footer {
   font-family: krub, sans-serif;
   text-align: center;
   padding-top: 80px;
+}
+
+.card {
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.flex-container {
+  justify-content: center;
+  padding-left: 40px;
 }
 
 /*End of Home Image + content */
@@ -238,13 +259,6 @@ footer {
   }
 }
 
-/* items on main page */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .flex-item {
   margin: 2rem;
 }
@@ -288,6 +302,13 @@ footer {
 /* responsive design for larger screens */
 @media (min-width: 768px) {
 
+/* items on main page */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .two-col-container {
   display: flex;
   box-sizing: border-box;
@@ -295,17 +316,17 @@ footer {
 }
 
 .search {
-  width: 400px;
+  width: 500px;
   padding-bottom: 10px;
   border-color: gray;
   border-radius: 5%;
   border-style: solid;
   margin-top: 25px;
-  margin-left: 10px;
+  justify-content: center;
 }
 
 .text-specificity {
-  width: 200px;
+  width: 285px;
   padding: 10px;
   margin-right: 10px;
   margin-top: 15px;
@@ -313,9 +334,15 @@ footer {
   font-family: krub, sans-serif;
 }
 
+.type-option {
+    width: 285px;
+    margin-right: 10px;
+    font-family: krub, sans-serif;
+    height: 50px;
+}
+
 .check-container {
   margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .check {
@@ -401,7 +428,7 @@ font-family: krub, sans-serif;
 .card {
 flex: 0, 0, 200px;
 background-color: white;
-width: 250px;
+width: 300px;
 height: 295px;
 border-radius: 10px;
 margin: 25px;

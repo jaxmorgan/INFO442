@@ -8,26 +8,15 @@ export default function Home(props) {
   return (
     <main>
       <header className="column-container">
-        <div>
-        <div class="text-block">
-    <div className="item">Shop Sustainably</div>
-  </div>
-        </div>
+          <div class="text-block">
+            <div className="item">Shop Sustainably</div>
+          </div>
       </header>
   
-  <div class="container">
-  <div class="row align-items-start">
-    <div class="col">
+  <div class="two-col-container">
     <SideFilter />
-    </div>
-    <div class="col">
     <Items />
-    </div>
   </div>
-  </div>
-
-      <div>
-      </div>
 
       <footer>
         <div>

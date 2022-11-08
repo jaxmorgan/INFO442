@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function Item(props) {
     return (
-        <div className="flex-item">
+        <div>
             <div className="card">
                 <img src={props.img} className="card-img-top" alt={props.id}></img>
                 <div className="card-body">
