@@ -385,6 +385,14 @@ footer {
     height: 50px;
 }
 
+.type-option-last {
+  width: 285px;
+  margin-right: 10px;
+  font-family: krub, sans-serif;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
 .check-container {
   margin-top: 20px;
 }

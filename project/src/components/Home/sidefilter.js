@@ -49,7 +49,7 @@ export default function SideFilter(props) {
             </div>
             <div>
               <label className="type" htmlFor="role">Price Range</label>
-              <select className="type-option" id="role" name="role">
+              <select className="type-option-last" id="role" name="role">
                 <option value="">-</option>
               </select>
             </div>
