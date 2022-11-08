@@ -69,7 +69,7 @@ export const ItemsContent = [{
     "img":"./img/wood-stool.webp", 
     "id":"8", 
     "supplier":"Avocado", 
-    "supplierLink":"https://www.avocadogreenmattress.com/products/zero-waste-wood-stool?utm_medium=cpc&utm_source=google&gclid=CjwKCAjwwL6aBhBlEiwADycBIAflfYJII5_7Dt7R8kHMBFwU8brhJnQAGZMjkTZ4OawM8Ng8_-RX2hoCsekQAvD_BwE", 
+    "supplierLink":"https://cdn-images.article.com/products/SKU11850/2890x1500/image39601.jpg?fit=max&w=970&q=80&fm=webp", 
     "addedToCart":"No"},
   
     {"name":"The Bed", 
