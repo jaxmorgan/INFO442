@@ -20,7 +20,7 @@ export default function NavBar() {
   return (
     <div className="nav-container">
     <div className="navbar">  
-      <img src="..\..\..\img\source-logo.png" className="logo" alt="logo of Source" />
+      <img src="..\..\..\img\source-logo.png" className="logo" alt="logo of Source" href="/Home" />
       <nav>
       <button className="hamburgerButton" state={hamburgerOpen ? "Close" : "Open"} onClick={handleToggle}><img src="img/hamburger-download.png" className="ham-icon" alt="hamburger icon" /></button>
         <ul className={`menuNav ${hamburgerOpen ? " showMenu" : ""}`}>

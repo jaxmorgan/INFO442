@@ -204,18 +204,26 @@ footer {
   padding: 10px;
 }
 
-.item { 
+.welcome-to-source { 
   text-align: center;
   box-sizing: content-box;
   width: 25%;
   border-style: solid;
-  color: black;
   border-color: darkslategray;
   margin: 15px 25px;
   padding: 10px 15px;
-  font-size: 20px;
+  font-size: 25px;
   background: rgb(195, 224, 195);
   border-radius: 25px;
+  height: 50px;
+}
+
+.welcome-to-source a {
+  color: black;
+}
+
+.welcome-to-source a:link, .welcome-to-source a:visited, .welcome-to-source a:hover, .welcome-to-source a:active{
+  text-decoration: none;
 }
 
 .product-filters {
