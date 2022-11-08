@@ -18,7 +18,7 @@ export default function NavBar() {
 
 
   return (
-    <div className="container">
+    <div className="nav-container">
     <div className="navbar">  
       <img src="..\..\..\img\source-logo.png" className="logo" alt="logo of Source" />
       <nav>
