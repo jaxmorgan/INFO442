@@ -277,6 +277,26 @@ footer {
   padding-left: 40px;
 }
 
+.shop-sustainably {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  font-family: sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 4px;
+  color: #1f145e;
+  text-shadow: -1px 1px 0px #aeb8fe,
+                1px 1px 0 #aeb8fe,
+                1px -1px 0 #aeb8fe,
+                -1px -1px 0 #aeb8fe,
+}
+
+.shop-sustainably span {
+  color: #507039;
+}
+
 /*End of Home Image + content */
 
 /*About */
@@ -355,6 +375,25 @@ footer {
 /*End of About */
 
 /*Profile */
+.col-md-12 {
+  padding-bottom: 20px;
+  font-family: krub, sans-serif;
+}
+
+.col-md-6 {
+  font-family: krub, sans-serif;
+}
+
+.button-text {
+  font-family: krub, sans-serif;
+}
+
+.profile-title {
+  font-family: krub, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
 
 
 
@@ -450,6 +489,7 @@ footer {
 
 .search {
   width: 500px;
+  background-color: #94b47b;
   padding-bottom: 10px;
   border-color: gray;
   border-radius: 5%;
@@ -652,6 +692,27 @@ color: darkgreen;
   width: 500px;
   font-size: 40px;
 }
+
+.shop-sustainably {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  font-family: sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 100pt;
+  letter-spacing: 4px;
+  color: #1f145e;
+  text-shadow: -1px 1px 0px #aeb8fe,
+                1px 1px 0 #aeb8fe,
+                1px -1px 0 #aeb8fe,
+                -1px -1px 0 #aeb8fe,
+}
+
+.shop-sustainably span {
+  color: #507039;
+}
+
 /*End of Home */
 
 /*Home Image + content */
