@@ -175,6 +175,39 @@ a {
   text-decoration: none;
 }
 
+.green-insight {
+  width: 400px;
+  background-color: #FFEAAC;
+  border-color: gray;
+  border-radius: 5%;
+  border-style: solid;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+.light-bulb-image {
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 145px;
+}
+
+.insight-header {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: gray;
+}
+
+.insight-content {
+  padding: 20px;
+  text-align: center;
+  color: gray;
+}
+
 /*End of Home Search */
 
 /*footer */
@@ -367,6 +400,26 @@ footer {
   border-style: solid;
   margin-top: 25px;
   justify-content: center;
+}
+
+.green-insight {
+  background-color: #FFEAAC;
+  width: 500px;
+  border-color: gray;
+  border-radius: 5%;
+  border-style: solid;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+.light-bulb-image {
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 200px;
 }
 
 .text-specificity {
