@@ -334,6 +334,10 @@ footer {
       border-radius: 25px;
       height: 50px;
     }
+
+    .mycontent {
+      border-right: 1px dashed #333;
+    }
     
     .about-source a {
       color: black;

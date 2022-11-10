@@ -6,14 +6,16 @@ return (
     <main>
     <div>
         <div className="about-content">
-
           <header className="column-container-about">
           <div class="text-block">
             <div className="welcome-to-source"><a href="/About">Shop Source</a></div>
           </div>
       </header>
 
-          <div class="about-text">
+      <div class = "container">
+        <div class = "row">
+        <div class="col-6 border-right">
+          <div class="col-sm">
           <p className="small-font">Source is on a mission to connect you with sustainable businesses for all of your home goods needs. We are committed to improving the current state of e-commerce through eliminating unsustainable consumer habits and mass production practices.</p>
           <p className="small-font-2">Our supplies are manually verified businesses who meet our minimum threshold requirements for sustainability. So, what do we look at specifically when it comes to our products and suppliers?:</p>
           <ul>
@@ -24,6 +26,9 @@ return (
             <p><a className="about-categories" href="https://en.wikipedia.org/wiki/Sustainable_packaging">Product packaging</a></p>
             <p><a className="about-categories" href="https://wedesigngreen.com/stories/__trashed">Overall climate risk</a></p>
           </ul>
+          </div>
+          </div>
+          <div class="col-sm">
           <p className="small-font">Many of our companies are B Corp Certified. What does this mean? </p>
           <p className="small-font">A B Corp Certification is a designation that a business is meeting high standards of verified performance, accountability, and transparency on factors from employee benefits and charitable giving to supply chain practices and input materials. In order to achieve certification, a company must: </p>
           <ul>
@@ -31,10 +36,11 @@ return (
             <li><span>Make a legal commitment by changing their corporate governance structure to be accountable to all stakeholders, not just shareholders, and achieve benefit corporation status if available in their jurisdiction.</span></li>
             <li><span>Exhibit transparency by allowing information about their performance measured against B Lab’s standards to be publicly available on their B Corp profile on B Lab’s website.</span></li>
           </ul>
-          
           <p className="small-font">When you shop on Source, you can be assured that you’re making purchases that are good for the planet.</p>
           </div>
+          </div>
         </div>
+    </div>
     </div>
     <footer>
         <div>
