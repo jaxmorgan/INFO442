@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 export default function About(props) {
 return (
+    <main>
     <div>
       <header className="header-with-image">
         <div className="about-content">
@@ -31,12 +32,13 @@ return (
           </div>
         </div>
       </header>
-      <footer>
+    </div>
+    <footer>
         <div>
           <p>Source</p>
           <p>&copy; 2022 INFO442 Project</p>
         </div>
       </footer>
-    </div>
+    </main>
   )
 }

@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar/navbar.js';
 import About from './components/About/about.js';
 import Home from './components/Home/home.js';
+import Account from './components/Account/account.js';
 import Items from './components/Items/items';
 import { ItemsContent } from "./data/productsData";
 
@@ -31,6 +32,7 @@ export default function App(props) {
           <Route path="/" render={() => <Navigate to="/Home" />} />
           <Route path="/About" element={<About />} />
           <Route path="/Shop" element={<Home />} />
+          <Route path="/Account" element={<Account />} />
         </Routes>        
       </Router>
 
