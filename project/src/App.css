@@ -175,6 +175,39 @@ a {
   text-decoration: none;
 }
 
+.green-insight {
+  width: 400px;
+  background-color: #FFEAAC;
+  border-color: gray;
+  border-radius: 5%;
+  border-style: solid;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+.light-bulb-image {
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 145px;
+}
+
+.insight-header {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: gray;
+}
+
+.insight-content {
+  padding: 20px;
+  text-align: center;
+  color: gray;
+}
+
 /*End of Home Search */
 
 /*footer */
@@ -244,32 +277,127 @@ footer {
   padding-left: 40px;
 }
 
+.shop-sustainably {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  font-family: sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 4px;
+  color: #1f145e;
+  text-shadow: -1px 1px 0px #aeb8fe,
+                1px 1px 0 #aeb8fe,
+                1px -1px 0 #aeb8fe,
+                -1px -1px 0 #aeb8fe,
+}
+
+.shop-sustainably span {
+  color: #507039;
+}
+
 /*End of Home Image + content */
 
 /*About */
-.aboutImage {
-  height: 300px;
-  width: 100%;
-  padding-bottom: 30px;
-  }
 
 .about-content {
-    text-align: center;
-    background-color: rgb(223, 240, 223);
+    background-color: rgb(239, 245, 239);
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
+
+  .small-font {
+    padding-top: 25px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+.about-categories {
+  padding-top: 25px;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 20px;
+  color: green;
+}
 
   .big-font {
     padding-top: 25px;
     padding-bottom: 25px;
-    color: darkgreen;
+    color: black;
     }
 
     .about-text {
       padding-left: 20px;
       padding-right: 20px;
+      font-size: 20px;
     }
 
+    li span {
+      position: relative;
+      left: -10px;
+      font-family: krub, sans-serif;
+    }
+
+    .column-container-about {
+      opacity: 0.85;
+      background-image: url('https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+      width: 100%;
+      padding-top: 115px;
+      padding-bottom: 115px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-source { 
+      text-align: center;
+      box-sizing: content-box;
+      width: 300px;
+      border-style: solid;
+      border-color: darkslategray;
+      margin: 15px 25px;
+      padding: 10px 15px;
+      font-size: 25px;
+      background: rgb(195, 224, 195);
+      border-radius: 25px;
+      height: 50px;
+    }
+
+    .about-source a {
+      color: black;
+    }
+    
+    .about-source a:link, .about-source a:visited, .about-source a:hover, .about-source a:active{
+      text-decoration: none;
+    }
 /*End of About */
+
+/*Profile */
+.col-md-12 {
+  padding-bottom: 20px;
+  font-family: krub, sans-serif;
+}
+
+.col-md-6 {
+  font-family: krub, sans-serif;
+}
+
+.button-text {
+  font-family: krub, sans-serif;
+}
+
+.profile-title {
+  font-family: krub, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+/*End of Profile */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -361,12 +489,33 @@ footer {
 
 .search {
   width: 500px;
+  background-color: #94b47b;
   padding-bottom: 10px;
   border-color: gray;
   border-radius: 5%;
   border-style: solid;
   margin-top: 25px;
   justify-content: center;
+}
+
+.green-insight {
+  background-color: #FFEAAC;
+  width: 500px;
+  border-color: gray;
+  border-radius: 5%;
+  border-style: solid;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+.light-bulb-image {
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 200px;
 }
 
 .text-specificity {
@@ -383,6 +532,7 @@ footer {
     margin-right: 10px;
     font-family: krub, sans-serif;
     height: 50px;
+    margin-bottom: 20px;
 }
 
 .check-container {
@@ -507,6 +657,23 @@ padding-bottom: 25px;
 color: darkgreen;
 }
 
+/*About */
+.aboutImage {
+  height: 400px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+
+  .about-content {
+    text-align: center;
+    background-color: rgb(245, 255, 245);
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+
 /*Home Image */
 .homeImage {
   height: 400px;
@@ -514,32 +681,8 @@ color: darkgreen;
   padding-left: 30px;
   padding-right: 30px;
   opacity: 0.4;
-}
 
-/*About */
-.aboutImage {
-  height: 700px;
-  width: 100%;
-  padding-bottom: 30px;
-  }
-
-.about-content {
-text-align: center;
 }
-
-.about-text {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.about-categories {
-color: green;
-}
-
-.about-content {
-  background-color: rgb(223, 240, 223);
-}
-/*End of About */
 
 /*Home */
 .item {
@@ -549,6 +692,27 @@ color: green;
   width: 500px;
   font-size: 40px;
 }
+
+.shop-sustainably {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  font-family: sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 100pt;
+  letter-spacing: 4px;
+  color: #1f145e;
+  text-shadow: -1px 1px 0px #aeb8fe,
+                1px 1px 0 #aeb8fe,
+                1px -1px 0 #aeb8fe,
+                -1px -1px 0 #aeb8fe,
+}
+
+.shop-sustainably span {
+  color: #507039;
+}
+
 /*End of Home */
 
 /*Home Image + content */
@@ -562,6 +726,17 @@ color: green;
   background-size: cover;
   background-position: center;
 }
+
+.column-container-about {
+  opacity: 0.85;
+  background-image: url('https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
 }
 
 @media (min-width: 900px) {
@@ -571,6 +746,12 @@ color: green;
   width: 100%;
   opacity: 0.4;
 }
+.aboutImage {
+  height: 300px;
+  padding-bottom: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -580,4 +761,10 @@ color: green;
   width: 100%;
   opacity: 0.4;
 }
+.aboutImage {
+  height: 700px;
+  padding-bottom: 30px;
+  padding-left: 250px;
+  padding-right: 250px;
+  }
 }
