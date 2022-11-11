@@ -19,7 +19,7 @@ export default function Item(props) {
                     <p className="card-text"> Delivery: {props.delivery}</p>
                     <p className="card-text"> Supplier: {props.supplier}</p>
                     <button className="cart-button" onclick={handleButtonAddCart}><img className="add-to-cart" src="..\..\..\img\cart-icon-3.png"/></button>
-                    <button className="supplier-button"><a href={props.supplierLink} target="blank">Learn About Supplier</a></button>
+                    <button className="supplier-button"><a href={props.supplierLink} target="blank">Supplier Sustainability</a></button>
                 </div>
             </div>
         </div>
