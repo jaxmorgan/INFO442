@@ -50,7 +50,7 @@ export default function SideFilter(props) {
   }
 
   const handleClick = () => {
-    props.applyFilterCallback(condition, type, supplier, range);
+    props.applyFilterCallback(type,range);
   }
 
   return (
