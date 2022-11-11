@@ -5,11 +5,10 @@ export default function About(props) {
 return (
     <main>
     <div>
-        <div className="about-content">
-          <header className="column-container-about">
+        <header className="column-container-about">
           <div class="text-block">
-            <div className="welcome-to-source"><a href="/Shop">Shop Source</a></div>
-          </div>
+            <p className="shop-sustainably-2">Why Source?</p>
+            </div>
       </header>
 
       <div class = "container">
@@ -39,7 +38,6 @@ return (
           <p className="small-font">When you shop on Source, you can be assured that you’re making purchases that are good for the planet.</p>
           </div>
           </div>
-        </div>
     </div>
     </div>
     <footer>

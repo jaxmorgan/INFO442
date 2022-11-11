@@ -3,13 +3,19 @@ import { useState } from 'react';
 
 export default function Account(props) {
     return (
-    <div>
-    <div class="container rounded bg-white mt-5 mb-5">
+
+    <div className="account-background">
+          <header className="column-container-account">
+          <div class="text-block">
+            <p className="shop-sustainably-3">My Source Profile</p>
+            </div>
+      </header>
+
+    <div class="row-about-1">
     <div class="row-about">
         <div>
             <div class="p-3 py-5">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h4 className="profile-title">Profile</h4>
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="first name" value="" /></div>
