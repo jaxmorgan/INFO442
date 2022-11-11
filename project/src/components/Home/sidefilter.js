@@ -60,7 +60,7 @@ export default function SideFilter(props) {
           <input className="text-specificity" name="text" type="text" id="text-input" placeholder="Search for a product..." />
 
           <fieldset>
-            <legend class="product-filters">Filter By</legend>
+            <legend class="product-filters">Filters</legend>
             <div className="check-container">
               <label className="check" htmlFor="check-input-intern">Used
                 <input type="checkbox" name="checkbox" id="check-input-intern" />
@@ -118,13 +118,13 @@ export default function SideFilter(props) {
 
       <div className="green-insight">        
           <div>
-            <img className="light-bulb-image" src="..\..\..\img\light-bulb.png"/>
-            <h4 class="insight-header">Green Insight of the Day</h4>
+            <img className="light-bulb-image" src="..\..\..\img\light-bulbpng.png"/>
+            <h4 class="insight-header">Sustainability Insight</h4>
             <p class="insight-content">Furniture is a major cause of air pollution and waste around the
               globe every year. One of the major concerns is that the vast majority
               of furniture is not recycled, leading to over 9 million tons of wood, metal,
               glass, fabric, leather, and foam ending up in landfills anually.</p>
-            <p class="insight-content">That's why we created Source: to ensure that you can have sustainable,
+            <p class="insight-content-2">That's why we created Source: to ensure that you can have sustainable,
               affordable, environmentally-friendly furniture delivered to your door at 
               the click of a button.
             </p>
