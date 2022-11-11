@@ -383,6 +383,19 @@ footer {
       background-position: center;
   }
 
+    .account-btn {
+      margin-left: 15px;
+      padding-bottom: 5px;
+      padding-right: 15px;
+      padding-left: 15px;
+      height: 60px;
+      color: black;
+      background-color: white;
+      border: none;
+      font-family: krub, sans-serif;
+      border-radius: 50px;
+    }
+
     .about-source { 
       text-align: center;
       box-sizing: content-box;
@@ -430,6 +443,7 @@ footer {
 .row-about {
   background-color: #6f7e63;
   color: white;
+  justify-content: center;
 }
 
 /*End of Profile */
