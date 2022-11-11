@@ -10,7 +10,7 @@
 #nav-text {
   color: #558564;
   font-size: 20px;
-  font-family: krub, sans-serif;
+  font-family: sans-serif;
   vertical-align:middle;
 }
 
@@ -64,9 +64,10 @@ nav ul li {
   display: block;
   list-style: none;
   text-decoration: none;
-  color: green;
+  color: #6f7e63;
   font-size: 20px;
-  font-family: krub, sans-serif;
+  font-family: sans-serif;
+  font-weight: 900;
 }
 
 .ham-navigator {
@@ -163,18 +164,21 @@ a {
 .supplier-button {
   margin-left: 15px;
   padding-bottom: 5px;
-  height: 50px;
-  background-color: lightgray;
+  height: 60px;
+  color: white;
+  background-color: #637b7e;
   border: none;
   font-family: krub, sans-serif;
+  border-radius: 50px;
 }
 
 .supplier-button a {
-  color: black;
+  color: white;
 }
 
 .supplier-button a:link, .supplier-button a:visited, .supplier-button a:hover, .supplier-button a:active {
   text-decoration: none;
+  color: white;
 }
 
 .green-insight {
@@ -224,8 +228,8 @@ a {
 
 /*footer */
 footer {
-  background-color: rgb(223, 240, 223);
-  color: black;
+  background-color: #7e636f;
+  color: white;
   text-align: center;
   font-size: 20px;
   margin-top: 10px;
@@ -582,9 +586,8 @@ nav ul li {
 }
 
 .navigator {
-    display: block;
-    font-size: 25px;
-    font-family: krub, sans-serif;
+    font-size: 21px;
+    font-family: sans-serif;
 }
 
 .ham-icon {
