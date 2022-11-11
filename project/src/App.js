@@ -7,6 +7,7 @@ import Home from './components/Home/home.js';
 import Account from './components/Account/account.js';
 import Items from './components/Items/items';
 import { ItemsContent } from "./data/productsData";
+import { useState } from 'react';
 
 
 export default function App(props) {
@@ -22,6 +23,21 @@ export default function App(props) {
   // }
 
   // Routes replaces Switch and Navigate replaces Redirect
+
+  const [show, setShow] = useState(true);
+  const [cart, setCart] = useState()
+
+  const handleClick = (item) => {
+    
+    // Add to cart
+    setCart((cart) => [
+      ...cart,
+      { ...item, amount: 1 } // <-- initial amount 1
+    ]);
+  };
+
+
+
   return (
     <div>
       <Router>
