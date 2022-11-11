@@ -9,7 +9,8 @@ export default function Home(props) {
     <main>
       <header className="column-container">
           <div class="text-block"></div>
-            <div><p className="shop-sustainably"><span>Shop. Sustainably.</span></p></div>
+            <div><p className="shop-sustainably"><span>Live & Shop</span></p></div>
+            <div><p className="shop-sustainably"><span> Sustainably.</span></p></div>
       </header>
   
   <div class="two-col-container">

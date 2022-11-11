@@ -278,7 +278,7 @@ footer {
 }
 
 .shop-sustainably {
-  margin: 0px 0px;
+  margin: 0px 25px;
   padding: 0px 0px;
   font-family: sans-serif;
   text-align: left;
@@ -489,7 +489,7 @@ footer {
 
 .search {
   width: 500px;
-  background-color: #94b47b;
+  background-color: #86a370;
   padding-bottom: 10px;
   border-color: gray;
   border-radius: 5%;
@@ -694,13 +694,11 @@ color: darkgreen;
 }
 
 .shop-sustainably {
-  margin: 0px 0px;
-  padding: 0px 0px;
   font-family: sans-serif;
   text-align: left;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 100pt;
+  font-size: 60pt;
   letter-spacing: 4px;
   color: #1f145e;
   text-shadow: -1px 1px 0px #aeb8fe,
