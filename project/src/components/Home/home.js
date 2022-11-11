@@ -38,8 +38,10 @@ export default function Home(props) {
   return (
     <main>
       <header className="column-container">
-          <div class="text-block"></div>
-            <div><p className="shop-sustainably"><span>Shop. Sustainably.</span></p></div>
+          <div class="text-block">
+            <p className="shop-sustainably">Live & Shop</p>
+            <p className="shop-sustainably">Sustainably.</p>
+            </div>
       </header>
   
   <div class="two-col-container">

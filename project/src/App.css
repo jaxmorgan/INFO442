@@ -118,11 +118,13 @@ a {
 .search {
   width: 400px;
   border-color: gray;
+  background-color: #7e636f;
+  color: white;  
   border-radius: 5%;
   border-style: solid;
   margin-top: 25px;
-  margin-bottom: 20px;
-  margin-left: 50px;
+  padding-bottom: 20px;
+  margin-left: 100px;
   justify-content: center;
 }
 
@@ -139,7 +141,7 @@ a {
   display: block;
   margin: 8px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .add-to-cart {
@@ -177,13 +179,13 @@ a {
 
 .green-insight {
   width: 400px;
-  background-color: #FFEAAC;
-  border-color: gray;
+  background-color: #6f7e63;
   border-radius: 5%;
+  color: white;
   border-style: solid;
   margin-top: 25px;
   margin-bottom: 20px;
-  margin-left: 50px;
+  margin-left: 100px;
   justify-content: center;
 }
 
@@ -199,13 +201,23 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  color: gray;
+  color: white;
 }
 
 .insight-content {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   text-align: center;
-  color: gray;
+  color: white;
+}
+
+.insight-content-2 {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: white;
 }
 
 /*End of Home Search */
@@ -231,13 +243,6 @@ footer {
   background-position: center;
 }
 
-.text-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 10px;
-}
 
 .welcome-to-source { 
   text-align: center;
@@ -274,28 +279,20 @@ footer {
 
 .flex-container {
   justify-content: center;
-  padding-left: 40px;
+  padding-left: 125px;
 }
 
 .shop-sustainably {
-  margin: 0px 0px;
-  padding: 0px 0px;
+  margin: 0px 25px;
   font-family: sans-serif;
-  text-align: left;
-  text-transform: uppercase;
+  color: #48533f;
+  text-align: center;
+  text-transform: lowercase;
   font-weight: 900;
-  font-size: 50px;
-  letter-spacing: 4px;
-  color: #1f145e;
-  text-shadow: -1px 1px 0px #aeb8fe,
-                1px 1px 0 #aeb8fe,
-                1px -1px 0 #aeb8fe,
-                -1px -1px 0 #aeb8fe,
+  font-size: 60px;
+  letter-spacing: 3px;
 }
 
-.shop-sustainably span {
-  color: #507039;
-}
 
 /*End of Home Image + content */
 
@@ -436,7 +433,6 @@ footer {
 }
 
 .card-img-top {
-  border-radius: 8px;
   max-width:100%;
   max-height:100%;
   height: 15rem;
@@ -489,24 +485,23 @@ footer {
 
 .search {
   width: 500px;
-  background-color: #94b47b;
+  background-color: #7e636f;
   padding-bottom: 10px;
-  border-color: gray;
+  color: white;  
   border-radius: 5%;
-  border-style: solid;
+  border-style:hidden;
   margin-top: 25px;
   justify-content: center;
 }
 
 .green-insight {
-  background-color: #FFEAAC;
+  background-color: #6f7e63;
+  opacity: 0.85;
   width: 500px;
-  border-color: gray;
   border-radius: 5%;
-  border-style: solid;
+  border-style: hidden;
   margin-top: 25px;
   margin-bottom: 20px;
-  margin-left: 50px;
   justify-content: center;
 }
 
@@ -544,6 +539,7 @@ footer {
   font-family: krub, sans-serif;
   display: block;
   margin: 8px;
+  padding-top: 20px;
   text-align: center;
   padding-top: 10px;
 }
@@ -633,6 +629,8 @@ font-weight: bold;
 .card-text-price {
   font-family: krub, sans-serif;
   font-size: 31px;
+  font-weight: bold;
+  color: #6f7e63;
   text-align: left;
   padding-left: 12px;
   padding-top: 0px;
@@ -694,24 +692,16 @@ color: darkgreen;
 }
 
 .shop-sustainably {
-  margin: 0px 0px;
-  padding: 0px 0px;
+  margin: 0px 25px;
   font-family: sans-serif;
-  text-align: left;
-  text-transform: uppercase;
+  color: #48533f;
+  text-align: center;
+  text-transform: lowercase;
   font-weight: 900;
-  font-size: 100pt;
-  letter-spacing: 4px;
-  color: #1f145e;
-  text-shadow: -1px 1px 0px #aeb8fe,
-                1px 1px 0 #aeb8fe,
-                1px -1px 0 #aeb8fe,
-                -1px -1px 0 #aeb8fe,
+  font-size: 100px;
+  letter-spacing: 3px;
 }
 
-.shop-sustainably span {
-  color: #507039;
-}
 
 /*End of Home */
 
