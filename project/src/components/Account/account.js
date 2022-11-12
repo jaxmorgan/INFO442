@@ -10,8 +10,6 @@ export default function Account(props) {
             <p className="shop-sustainably-3">My Source Profile</p>
             </div>
       </header>
-
-    <div class="row-about-1">
     <div class="row-about">
         <div>
             <div class="p-3 py-5">
@@ -32,7 +30,6 @@ export default function Account(props) {
             </div>
         </div>
     </div>
-</div>
     <footer>
     <div>
       <p>Source</p>

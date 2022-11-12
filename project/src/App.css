@@ -331,7 +331,7 @@ footer {
   }
 
   .small-font {
-    padding-top: 25px;
+    padding-top: 60px;
     text-align: left;
     padding-left: 20px;
     font-size: 20px;
@@ -384,16 +384,17 @@ footer {
   }
 
     .account-btn {
-      margin-left: 15px;
+      margin-left: 5px;
       padding-bottom: 5px;
       padding-right: 15px;
       padding-left: 15px;
-      height: 60px;
+      height: 50px;
       color: black;
       background-color: white;
       border: none;
       font-family: krub, sans-serif;
-      border-radius: 50px;
+      border-radius: 10px;
+      justify-content: center;
     }
 
     .about-source { 
@@ -441,7 +442,7 @@ footer {
 }
 
 .row-about {
-  background-color: #6f7e63;
+  background-color: #87977a;
   color: white;
   justify-content: center;
 }
