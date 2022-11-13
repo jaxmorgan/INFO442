@@ -35,13 +35,15 @@ export default function App(props) {
       { ...item, amount: 1 } // <-- initial amount 1
     ]);
   };
-
-
   
-
- 
-
-
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const queryFilter = {
+    query: urlParams.get('query'),
+    filter: urlParams.get('filter'),
+    supplier: urlParams.get('supplier'),
+    range: urlParams.get('range')
+  }
 
   return (
     <div>
@@ -50,7 +52,7 @@ export default function App(props) {
         <Routes>
           <Route index element={<Home/>} />
           <Route path="/Home" element={<Home/>} />
-          <Route path="/" render={() => <Navigate to="/Home" />} />
+          <Route path="/" render={() => <Navigate to="/Home" props={queryFilter}/>} />
           <Route path="/About" element={<About />} />
           <Route path="/Shop" element={<Home/>} />
           <Route path="/Account" element={<Account />} />
