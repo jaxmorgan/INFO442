@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 
 export default function SideFilter(props) {
 
-  // let [searchParams, setSearchParams] = useSearchParams();
+  const url = new URL("http://localhost:3000/Home?query=&filter=&supplier=&range=");
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -57,7 +57,7 @@ export default function SideFilter(props) {
     <section className="search-template">
       <div className="search">
         <form className="form1" >
-          <input className="text-specificity" name="text" type="text" id="text-input" placeholder="Search for a product..." />
+          <input className="text-specificity" name="query" type="text" id="text-input" placeholder="Search for a product..." />
 
           <fieldset>
             <legend class="product-filters">Filters</legend>
@@ -73,7 +73,7 @@ export default function SideFilter(props) {
 
           <div>
             <div>
-              <label className="type" htmlFor="location">Product Type</label>
+              <label className="type" htmlFor="type">Product Type</label>
               <select id="type" className="form-select dropdown1 btn btn-secondary" type="button" value={type} onChange={handleType}>
                 <option value="">Show all items</option>
                 <option value="table">Table</option>
@@ -87,8 +87,8 @@ export default function SideFilter(props) {
 
 
             <div>
-              <label className="type" htmlFor="location">Supplier</label>
-              <select className="type-option" id="location" name="location">
+              <label className="type" htmlFor="supplier">Supplier</label>
+              <select className="type-option" id="supplier" name="supplier">
                 <option value="">-</option>
               </select>
             </div>
@@ -96,8 +96,8 @@ export default function SideFilter(props) {
 
 
             <div>
-              <label className="type" htmlFor="role">Price Range</label>
-              <select className="type-option" id="role" name="role">
+              <label className="type" htmlFor="range">Price Range</label>
+              <select className="type-option" id="range" name="range">
                 <option value="">-</option>
               </select>
             </div>
@@ -109,8 +109,6 @@ export default function SideFilter(props) {
                 </form>
             </button>
             </div>
-
-
           </div>
         </form>
       </div>
