@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/navbar.js';
 import About from './components/About/about.js';
 import Home from './components/Home/home.js';
 import Account from './components/Account/account.js';
+import Cart from './components/Cart/cart.js';
 import Items from './components/Items/items';
 import { ItemsContent } from './data/productsData';
 import { useState } from 'react';
@@ -56,6 +57,7 @@ export default function App(props) {
           <Route path="/About" element={<About />} />
           <Route path="/Shop" element={<Home/>} />
           <Route path="/Account" element={<Account />} />
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
       </Router>
       

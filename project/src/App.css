@@ -321,6 +321,14 @@ footer {
 
 /*End of Home Image + content */
 
+/* Cart */
+.payment-form {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+/* End of Cart */
+
 /*About */
 
 .about-content {
