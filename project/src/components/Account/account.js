@@ -24,7 +24,7 @@ export default function Account(props) {
                     <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control form-control-lg" placeholder="enter address line 2" value="" /></div>
                     <div class="col-md-12"><label class="labels">Zip Code</label><input type="text" class="form-control form-control-lg" placeholder="enter address line 2" value="" /></div>
                     <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control form-control-lg" placeholder="enter address line 2" value="" /></div>
-                    <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control form-control-lg" placeholder="enter email id" value="" /></div>
+                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control form-control-lg" placeholder="enter email" value="" /></div>
                 </div>
                 <div class="button-text"><button class="account-btn" type="button">Save Profile</button></div>
             </div>
