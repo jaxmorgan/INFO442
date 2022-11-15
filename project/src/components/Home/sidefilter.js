@@ -78,6 +78,7 @@ export default function SideFilter(props) {
         <div>
           <div>
             <label className="type" htmlFor="type">Product Type</label>
+            <div className="side-filter-form">
             <select id="type" className="form-select dropdown1 btn btn-secondary" type="button" value={type} onChange={handleType}>
               <option value="">Show all types</option>
               <option value="table">Table</option>
@@ -87,6 +88,7 @@ export default function SideFilter(props) {
               <option value="dresser">Dresser</option>
 
             </select>
+            </div>
           </div>
 
 
@@ -135,7 +137,7 @@ export default function SideFilter(props) {
           <div>
             <button className='btngo'>
 
-              <div className="btn btn-outline-success " ref={ref} onClick={handleClick}>Apply</div>
+              <div className="btn btn-light" id="apply-filters" ref={ref} onClick={handleClick}>Apply</div>
             </button>
           </div>
         </div>
