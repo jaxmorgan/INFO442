@@ -26,7 +26,7 @@ export default function App(props) {
   // Routes replaces Switch and Navigate replaces Redirect
 
   const [show, setShow] = useState(true);
-  const [cart, setCart] = useState()
+  const [cart, setCart] = useState([])
 
   const handleClick = (item) => {
 
@@ -35,6 +35,7 @@ export default function App(props) {
       ...cart,
       { ...item, amount: 1 } // <-- initial amount 1
     ]);
+    console.log(cart)
   };
   
   const queryString = window.location.search;
@@ -52,12 +53,12 @@ export default function App(props) {
         <NavBar />
         <Routes>
           <Route index element={<Home/>} />
-          <Route path="/Home" element={<Home/>} />
-          <Route path="/" render={() => <Navigate to="/Home" props={queryFilter}/>} />
+          <Route path="/Home" element={<Home filter={queryFilter} addCart={handleClick}/>} />
+          <Route path="/" render={() => <Navigate to="/Home"/>} />
           <Route path="/About" element={<About />} />
           <Route path="/Shop" element={<Home/>} />
           <Route path="/Account" element={<Account />} />
-          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Cart" element={<Cart data={cart}/>} />
         </Routes>
       </Router>
       
