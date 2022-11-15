@@ -4,6 +4,7 @@ import Item from '../Items/items';
 import SideFilter from './sidefilter';
 import { ItemsContent } from '../../data/productsData';
 import { useState } from 'react';
+import { NoItem } from '../../data/noData';
 
 export default function Home(props) {
 
@@ -55,6 +56,18 @@ export default function Home(props) {
       }
     );
   }
+  
+  function isEmptyObject(obj) {
+    return !Object.keys(obj).length;
+  }
+
+  if (isEmptyObject(displayedData)) {
+
+    displayedData = NoItem
+     
+  } 
+
+  
 
   
 
@@ -87,7 +100,9 @@ export default function Home(props) {
 
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} />
+        <div className="flex-container">
         <Items data={displayedData} />
+        </div>
 
 
       </div>

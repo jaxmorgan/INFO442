@@ -52,8 +52,8 @@ export default function SideFilter(props) {
   }
 
   const handleClick = (event) => {
-    
-    props.applyFilterCallback(type,supplier,status,range);
+
+    props.applyFilterCallback(type, supplier, status, range);
   }
 
   const ref = useRef(null);
@@ -72,7 +72,7 @@ export default function SideFilter(props) {
 
         <fieldset>
           <legend class="product-filters">Filters</legend>
-         
+
         </fieldset>
 
         <div>
@@ -113,7 +113,7 @@ export default function SideFilter(props) {
               <option value="">Show all condition</option>
               <option value="new">New</option>
               <option value="used">used</option>
-              
+
 
             </select>
           </div>
@@ -127,21 +127,19 @@ export default function SideFilter(props) {
               <option value="low">$0 - $500</option>
               <option value="mid">$500 - $1000</option>
               <option value="high">$1000 UP</option>
-              
+
 
             </select>
           </div>
 
           <div>
             <button className='btngo'>
-              {/* <form className="d-flex search-bar">
-                    
-                </form> */}
+
               <div className="btn btn-outline-success " ref={ref} onClick={handleClick}>Apply</div>
             </button>
           </div>
         </div>
-        {/* </form> */}
+
       </div>
 
 
