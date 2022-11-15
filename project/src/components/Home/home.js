@@ -27,7 +27,7 @@ export default function Home(props) {
   }
 
   if (filter.supplier === '') {
-    displayedData = ItemsContent;
+    displayedData = displayedData;
   } else{
     displayedData = displayedData.filter(
       (n) => {
@@ -37,7 +37,7 @@ export default function Home(props) {
   }
 
   if (filter.status === '') {
-    displayedData = ItemsContent;
+    displayedData = displayedData;
   } else{
     displayedData = displayedData.filter(
       (n) => {
@@ -47,7 +47,7 @@ export default function Home(props) {
   }
 
   if (filter.range === '') {
-    displayedData = ItemsContent;
+    displayedData = displayedData;
   } else{
     displayedData = displayedData.filter(
       (n) => {
@@ -64,23 +64,9 @@ export default function Home(props) {
 
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const applyFilter = (filter1, filter2, filter3, filter4) => {
 
-    setFilter({ type: filter1, supplier: filter2, status: filter3, range:filter4 }); //update the state to be a new value
+    setFilter({ type: filter1, supplier: filter2, status: filter3, range: filter4 }); //update the state to be a new value
   }
 
 
