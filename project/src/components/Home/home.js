@@ -8,17 +8,17 @@ import { useState } from 'react';
 export default function Home(props) {
 
 
-  const hookArray = useState({type: 'Show all items', supplier: 'Show all items'});
+  const hookArray = useState({ type: 'Show all types' });
   const filter = hookArray[0];
   const setFilter = hookArray[1];
 
-  
+
 
   let displayedData;
 
-  if (filter.type === "Show all items") {
+  if (filter.type === "Show all types" || filter.type === '') {
     displayedData = ItemsContent;
-  } else {
+  } else{
     displayedData = ItemsContent.filter(
       (n) => {
         return n.type === filter.type;
@@ -26,9 +26,64 @@ export default function Home(props) {
     );
   }
 
-  const applyFilter = (filter1, filter2) => {
-    setFilter({ type: filter1, supplier: filter2 });
-}
+  if (filter.supplier === '') {
+    displayedData = ItemsContent;
+  } else{
+    displayedData = displayedData.filter(
+      (n) => {
+        return n.supplier === filter.supplier;
+      }
+    );
+  }
+
+  if (filter.status === '') {
+    displayedData = ItemsContent;
+  } else{
+    displayedData = displayedData.filter(
+      (n) => {
+        return n.status === filter.status;
+      }
+    );
+  }
+
+  if (filter.range === '') {
+    displayedData = ItemsContent;
+  } else{
+    displayedData = displayedData.filter(
+      (n) => {
+        return n.range === filter.range;
+      }
+    );
+  }
+
+  
+
+
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const applyFilter = (filter1, filter2, filter3, filter4) => {
+
+    setFilter({ type: filter1, supplier: filter2, status: filter3, range:filter4 }); //update the state to be a new value
+  }
+
+
 
 
 
@@ -38,16 +93,18 @@ export default function Home(props) {
   return (
     <main>
       <header className="column-container">
-          <div class="text-block">
-            <p className="shop-sustainably">Live & Shop</p>
-            <p className="shop-sustainably">Sustainably.</p>
-            </div>
+        <div className="text-block">
+          <p className="shop-sustainably">Live & Shop</p>
+          <p className="shop-sustainably">Sustainably.</p>
+        </div>
       </header>
-  
-  <div class="two-col-container">
-    <SideFilter applyFilterCallback={applyFilter}/>
-    <Items data={displayedData}/>
-  </div>
+
+      <div class="two-col-container">
+        <SideFilter applyFilterCallback={applyFilter} />
+        <Items data={displayedData} />
+
+
+      </div>
 
       <footer>
         <div>

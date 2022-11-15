@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { nanoid } from 'nanoid'
 
@@ -16,9 +18,9 @@ export default function SideFilter(props) {
     // setSearchParams(params);
   }
 
-  const hookArrayCondition = useState('');
-  const condition = hookArrayCondition[0];
-  const setCondition = hookArrayCondition[1];
+  const hookArrayStatus = useState('');
+  const status = hookArrayStatus[0];
+  const setStatus = hookArrayStatus[1];
 
   const hookArrayType = useState('');
   const type = hookArrayType[0];
@@ -33,8 +35,8 @@ export default function SideFilter(props) {
   const setRange = hookArrayRange[1];
 
 
-  const handleCondition = (event) => {
-    setCondition(event.target.value);
+  const handleStatus = (event) => {
+    setStatus(event.target.value);
   }
 
   const handleType = (event) => {
@@ -49,84 +51,113 @@ export default function SideFilter(props) {
     setRange(event.target.value);
   }
 
-  const handleClick = () => {
-    props.applyFilterCallback(type,range);
+  const handleClick = (event) => {
+    
+    props.applyFilterCallback(type,supplier,status,range);
   }
+
+  const ref = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      ref.current.click();
+    }, 0); //miliseconds
+  }, []);
 
   return (
     <section className="search-template">
       <div className="search">
-        <form className="form1" >
-          <input className="text-specificity" name="query" type="text" id="text-input" placeholder="Search for a product..." />
+        {/* <form className="form1" > */}
+        <input className="text-specificity" name="query" type="text" id="text-input" placeholder="Search for a product..." />
 
-          <fieldset>
-            <legend class="product-filters">Filters</legend>
-            <div className="check-container">
-              <label className="check" htmlFor="check-input-intern">Used
-                <input type="checkbox" name="checkbox" id="check-input-intern" />
-              </label>
-              <label className="check" htmlFor="check-input-full">New
-                <input type="checkbox" name="checkbox" id="check-input-full" />
-              </label>
-            </div>
-          </fieldset>
+        <fieldset>
+          <legend class="product-filters">Filters</legend>
+         
+        </fieldset>
+
+        <div>
+          <div>
+            <label className="type" htmlFor="type">Product Type</label>
+            <select id="type" className="form-select dropdown1 btn btn-secondary" type="button" value={type} onChange={handleType}>
+              <option value="">Show all types</option>
+              <option value="table">Table</option>
+              <option value="bed">Bed</option>
+              <option value="sofa">Sofa</option>
+              <option value="organization">Organization</option>
+              <option value="dresser">Dresser</option>
+
+            </select>
+          </div>
+
 
           <div>
-            <div>
-              <label className="type" htmlFor="type">Product Type</label>
-              <select id="type" className="form-select dropdown1 btn btn-secondary" type="button" value={type} onChange={handleType}>
-                <option value="">Show all items</option>
-                <option value="table">Table</option>
-                <option value="bed">Bed</option>
-                <option value="sofa">Sofa</option>
-                <option value="organization">Organization</option>
-                <option value="dresser">Dresser</option>
+            <label className="type" htmlFor="supplier">Supplier</label>
+            <select id="supplier" className="form-select dropdown1 btn btn-secondary" type="button" value={supplier} onChange={handleSupplier}>
+              <option value="">Show all suppliers</option>
+              <option value="West Elm">West Elm</option>
+              <option value="Sabai">Sabai</option>
+              <option value="Oliver Space">Oliver Space</option>
+              <option value="Medley Home">Medley Home</option>
+              <option value="Haiku Designs">Haiku Designs</option>
+              <option value="Inside Weather">Inside Weather</option>
+              <option value="Avocado">Avocado</option>
+              <option value="Thuma">Thuma</option>
+              <option value="Room Board">Room Board</option>
 
-              </select>
-            </div>
-
-
-            <div>
-              <label className="type" htmlFor="supplier">Supplier</label>
-              <select className="type-option" id="supplier" name="supplier">
-                <option value="">-</option>
-              </select>
-            </div>
-
-
-
-            <div>
-              <label className="type" htmlFor="range">Price Range</label>
-              <select className="type-option" id="range" name="range">
-                <option value="">-</option>
-              </select>
-            </div>
-
-            <div>
-            <button className='btngo'>
-                <form className="d-flex search-bar">
-                    <div className="btn btn-outline-success " type="button" onClick={handleClick}>Apply</div>
-                </form>
-            </button>
-            </div>
+            </select>
           </div>
-        </form>
+
+          <div>
+            <label className="type" htmlFor="status">Product status</label>
+            <select id="status" className="form-select dropdown1 btn btn-secondary" type="button" value={status} onChange={handleStatus}>
+              <option value="">Show all condition</option>
+              <option value="new">New</option>
+              <option value="used">used</option>
+              
+
+            </select>
+          </div>
+
+
+
+          <div>
+            <label className="type" htmlFor="range">Price Range</label>
+            <select id="range" className="form-select dropdown1 btn btn-secondary" type="button" value={range} onChange={handleRange}>
+              <option value="">show all price range</option>
+              <option value="low">$0 - $500</option>
+              <option value="mid">$500 - $1000</option>
+              <option value="high">$1000 UP</option>
+              
+
+            </select>
+          </div>
+
+          <div>
+            <button className='btngo'>
+              {/* <form className="d-flex search-bar">
+                    
+                </form> */}
+              <div className="btn btn-outline-success " ref={ref} onClick={handleClick}>Apply</div>
+            </button>
+          </div>
+        </div>
+        {/* </form> */}
       </div>
 
 
-      <div className="green-insight">        
-          <div>
-            <img className="light-bulb-image" src="..\..\..\img\light-bulbpng.png"/>
-            <h4 class="insight-header">Sustainability Insight</h4>
-            <p class="insight-content">Furniture is a major cause of air pollution and waste around the
-              globe every year. One of the major concerns is that the vast majority
-              of furniture is not recycled, leading to over 9 million tons of wood, metal,
-              glass, fabric, leather, and foam ending up in landfills anually.</p>
-            <p class="insight-content-2">That's why we created Source: to ensure that you can have sustainable,
-              affordable, environmentally-friendly furniture delivered to your door at 
-              the click of a button.
-            </p>
-          </div>
+      <div className="green-insight">
+        <div>
+          <img className="light-bulb-image" src="..\..\..\img\light-bulbpng.png" />
+          <h4 class="insight-header">Sustainability Insight</h4>
+          <p class="insight-content">Furniture is a major cause of air pollution and waste around the
+            globe every year. One of the major concerns is that the vast majority
+            of furniture is not recycled, leading to over 9 million tons of wood, metal,
+            glass, fabric, leather, and foam ending up in landfills anually.</p>
+          <p class="insight-content-2">That's why we created Source: to ensure that you can have sustainable,
+            affordable, environmentally-friendly furniture delivered to your door at
+            the click of a button.
+          </p>
+        </div>
       </div>
 
     </section>
