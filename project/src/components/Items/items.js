@@ -1,7 +1,6 @@
-import Item from "./item"
+
 import { ItemsContent } from "../../data/productsData"
-
-
+import Item from "./item"
 
 
 

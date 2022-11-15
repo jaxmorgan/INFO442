@@ -7,6 +7,30 @@ import { nanoid } from 'nanoid'
 
 export default function SideFilter(props) {
 
+   let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
+ // controls what job cards are displayed after user types into search box
+   function searchFilter(search) {
+     search.preventDefault();
+     if (search === '') {
+       setDisplayedSearchItems(props.items);
+     } else if (search != '') {
+       let cartCardsBySearch = props.items.filter(item => {
+         if (item.name.toLowerCase().includes(search.toLowerCase())) {
+           return item;
+         } else if (item.supplier.toLowerCase().includes(search.toLowerCase())) {
+           return item;
+         }
+       })
+       setDisplayedSearchItems(cartCardsBySearch);
+     }
+   }
+
+   searchFilter={searchFilter}
+
+  //SEARCH
+
+  //FILTER
+
   const url = new URL("http://localhost:3000/Home?query=&filter=&supplier=&range=");
 
   function handleSubmit(event) {
@@ -66,6 +90,7 @@ export default function SideFilter(props) {
 
   return (
     <section className="search-template">
+      <searchFilter />
       <div className="search">
         {/* <form className="form1" > */}
         <input className="text-specificity" name="query" type="text" id="text-input" placeholder="Search for a product..." />
