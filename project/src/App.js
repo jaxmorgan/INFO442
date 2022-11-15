@@ -31,6 +31,16 @@ export default function App(props) {
   const handleClick = (item) => {
 
     // Add to cart
+    // if (cart.includes(item)) {
+    //   // if item already in cart, add amount to the item
+    //   let i = cart.indexOf(item);
+    //   cart[i].amount += 1;
+    // } else {
+    //   setCart((cart) => [
+    //     ...cart,
+    //     { ...item, amount: 1 } // <-- initial amount 1
+    //   ]);
+    // }
     setCart((cart) => [
       ...cart,
       { ...item, amount: 1 } // <-- initial amount 1
