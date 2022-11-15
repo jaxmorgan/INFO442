@@ -4,6 +4,10 @@ import { useState } from 'react';
 export default function Cart(props) {
     return (
         <div>
+        <div className="two-col-container">
+        <div>
+            <p>This is where cart items will goooooooooooo</p>
+        </div>
         <div className="payment-form">
             <div class="p-3 py-5">
                 <div class="d-flex justify-content-between align-items-center">
@@ -19,6 +23,7 @@ export default function Cart(props) {
                     <div class="col-md-6"><label class="labels">CVV</label><input type="text" class="form-control form-control-lg" value="" placeholder="cvv" /></div>
                 </div>
                 <div class="button-text"><button class="btn btn-primary" type="button">Purchase</button></div>
+            </div>
             </div>
             </div>
     <footer>
