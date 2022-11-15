@@ -8,6 +8,26 @@ import { NoItem } from '../../data/noData';
 
 export default function Home(props) {
 
+//SEARCH
+
+let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
+// controls what job cards are displayed after user types into search box
+  function searchFilter(search) {
+    search.preventDefault();
+    if (search === '') {
+      setDisplayedSearchItems(props.items);
+    } else if (search != '') {
+      let cartCardsBySearch = props.items.filter(item => {
+        if (item.name.toLowerCase().includes(search.toLowerCase())) {
+          return item;
+        } else if (item.supplier.toLowerCase().includes(search.toLowerCase())) {
+          return item;
+        }
+      })
+      setDisplayedSearchItems(cartCardsBySearch);
+    }
+  }
+
 
   const hookArray = useState({ type: 'Show all types' });
   const filter = hookArray[0];
@@ -99,7 +119,7 @@ export default function Home(props) {
       </header>
 
       <div class="two-col-container">
-        <SideFilter applyFilterCallback={applyFilter} />
+        <SideFilter applyFilterCallback={applyFilter} applySearchCallback={searchFilter}/>
         <div className="flex-container">
         <Items data={displayedData} />
         </div>
