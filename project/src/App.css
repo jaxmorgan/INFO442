@@ -791,6 +791,50 @@ color: darkgreen;
 }
 
 /*Home */
+#type {
+  background-color: white;
+  color: gray;
+  width: 400px;
+  height: 50px;
+  margin-left: 48px;
+}
+
+#supplier {
+  background-color: white;
+  color: gray;
+  width: 400px;
+  height: 50px;
+  margin-left: 48px;
+}
+
+#status {
+  background-color: white;
+  color: gray;
+  width: 400px;
+  height: 50px;
+  margin-left: 48px;
+}
+
+.btngo {
+  margin-top: 15px;
+  margin-left: 215px;
+  padding: 0px;
+}
+
+#text-input {
+  margin-left: 48px;
+  margin-top: 15px;
+  width: 400px;
+}
+
+#range {
+  background-color: white;
+  color: gray;
+  width: 400px;
+  height: 50px;
+  margin-left: 48px;
+}
+
 .item {
   margin: 20px 30px;
   padding: 15px 20px;
