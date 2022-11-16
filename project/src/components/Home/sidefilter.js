@@ -174,7 +174,7 @@ export default function SideFilter(props) {
           </div>
 
           <div>
-            <button className='btngo'>
+            <button className='btnApply'>
 
               <div className="btn btn-light" id="apply-filters" ref={ref} onClick={handleClick}>Apply</div>
             </button>

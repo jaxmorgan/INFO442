@@ -118,7 +118,6 @@ a {
 /*Home Search */
 .search {
   width: 400px;
-  border-color: gray;
   background-color: #7e636f;
   color: white;  
   border-radius: 5%;
@@ -166,9 +165,17 @@ a {
 }
 
 .btngo {
+  margin-top: 40px;
+  margin-left: 165px;
+  border-radius: 15px;
+  border-style: hidden;
+}
+
+.btnApply {
   margin-top: 15px;
   margin-left: 150px;
-  padding: 0px;
+  border-radius: 15px;
+  border-style: hidden;
 }
 
 #text-input {
@@ -321,7 +328,7 @@ footer {
 .product-filters {
   font-family: krub, sans-serif;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .card {
@@ -816,9 +823,14 @@ color: darkgreen;
 }
 
 .btngo {
-  margin-top: 15px;
+  margin-top: 45px;
   margin-left: 215px;
-  padding: 0px;
+}
+
+.btnApply {
+  margin-top: 15px;
+  margin-left: 205px;
+  margin-bottom: 0px;
 }
 
 #text-input {
