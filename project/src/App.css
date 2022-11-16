@@ -708,6 +708,7 @@ nav ul li {
 
 .navigator {
     font-size: 35px;
+    margin-top: 20px;
     font-family: sans-serif;
     color: #6f7e63
 }
@@ -722,7 +723,7 @@ nav ul li a:hover {
 
 .menuNav {
 right: 10px;
-width: 400px;
+width: 600px;
 position: relative;
 background-color: transparent;
 display: inline-block;
