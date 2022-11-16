@@ -7,30 +7,6 @@ import { nanoid } from 'nanoid'
 
 export default function SideFilter(props) {
 
-   let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
- // controls what job cards are displayed after user types into search box
-   function searchFilter(search) {
-     search.preventDefault();
-     if (search === '') {
-       setDisplayedSearchItems(props.items);
-     } else if (search != '') {
-       let cartCardsBySearch = props.items.filter(item => {
-         if (item.name.toLowerCase().includes(search.toLowerCase())) {
-           return item;
-         } else if (item.supplier.toLowerCase().includes(search.toLowerCase())) {
-           return item;
-         }
-       })
-       setDisplayedSearchItems(cartCardsBySearch);
-     }
-   }
-
-   searchFilter={searchFilter}
-
-  //SEARCH
-
-  //FILTER
-
   const url = new URL("http://localhost:3000/Home?query=&filter=&supplier=&range=");
 
   function handleSubmit(event) {
@@ -88,15 +64,47 @@ export default function SideFilter(props) {
     }, 0); //miliseconds
   }, []);
 
+  const ref2 = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      ref2.current.click();
+    }, 0); //miliseconds
+  }, []);
+
+
+  const [query, setQuery] = useState('');
+
+
+  const handleChange = (e) => {
+
+    setQuery(e.target.value);
+  }
+
+  const handleSearch = (event) => {
+
+    props.applySearchCallback(query);
+  }
+
+
+
+
   return (
     <section className="search-template">
-      <searchFilter />
       <div className="search">
         {/* <form className="form1" > */}
-        <input className="text-specificity" name="query" type="text" id="text-input" placeholder="Search for a product..." />
+
+        
+
+        <input className="text-specificity" id="text-input" placeholder="Search for a product..." value={query} type="search" onChange={handleChange} />
+
+        
 
         <fieldset>
           <legend class="product-filters">Filters</legend>
+          <button className='btngo'>
+          <div className="btn btn-light" id="apply-search" ref={ref2} onClick={handleSearch}>Go</div>
+        </button>
 
         </fieldset>
 
@@ -104,15 +112,15 @@ export default function SideFilter(props) {
           <div>
             <label className="type" htmlFor="type">Product Type</label>
             <div className="side-filter-form">
-            <select id="type" className="form-select dropdown1 btn btn-secondary" type="button" value={type} onChange={handleType}>
-              <option value="">Show all types</option>
-              <option value="table">Table</option>
-              <option value="bed">Bed</option>
-              <option value="sofa">Sofa</option>
-              <option value="organization">Organization</option>
-              <option value="dresser">Dresser</option>
+              <select id="type" className="form-select dropdown1 btn btn-secondary" type="button" value={type} onChange={handleType}>
+                <option value="">Show all types</option>
+                <option value="table">Table</option>
+                <option value="bed">Bed</option>
+                <option value="sofa">Sofa</option>
+                <option value="organization">Organization</option>
+                <option value="dresser">Dresser</option>
 
-            </select>
+              </select>
             </div>
           </div>
 

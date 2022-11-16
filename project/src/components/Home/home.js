@@ -8,24 +8,37 @@ import { NoItem } from '../../data/noData';
 
 export default function Home(props) {
 
-//SEARCH
 
-let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
-// controls what job cards are displayed after user types into search box
-  function searchFilter(search) {
-    search.preventDefault();
-    if (search === '') {
-      setDisplayedSearchItems(props.items);
-    } else if (search != '') {
-      let cartCardsBySearch = props.items.filter(item => {
-        if (item.name.toLowerCase().includes(search.toLowerCase())) {
-          return item;
-        } else if (item.supplier.toLowerCase().includes(search.toLowerCase())) {
-          return item;
-        }
-      })
-      setDisplayedSearchItems(cartCardsBySearch);
-    }
+  let displayedData;
+
+
+  //SEARCH
+
+  const hookArraySearch = useState("");
+  const search = hookArraySearch[0];
+  const setSearch = hookArraySearch[1];
+
+
+  const applySearch = (search1) => {
+
+    setSearch({ query: search1 })
+    //console.log(search.query)
+
+  }
+
+  if (search.query === '') {
+    console.log('no search')
+    displayedData = ItemsContent;
+  } else {
+
+  
+    //need a way to filter data here
+    // what in the type box already here
+    //console.log('have search', search.query);
+    //console.log(ItemsContent.filter(show => show.supplier.includes(search.query)));
+
+
+    displayedData = ItemsContent.filter(show => show.supplier.includes(search.query));
   }
 
 
@@ -35,11 +48,9 @@ let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
 
 
 
-  let displayedData;
-
   if (filter.type === "Show all types" || filter.type === '') {
-    displayedData = ItemsContent;
-  } else{
+    displayedData = displayedData;
+  } else {
     displayedData = ItemsContent.filter(
       (n) => {
         return n.type === filter.type;
@@ -49,7 +60,7 @@ let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
 
   if (filter.supplier === '') {
     displayedData = displayedData;
-  } else{
+  } else {
     displayedData = displayedData.filter(
       (n) => {
         return n.supplier === filter.supplier;
@@ -59,7 +70,7 @@ let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
 
   if (filter.status === '') {
     displayedData = displayedData;
-  } else{
+  } else {
     displayedData = displayedData.filter(
       (n) => {
         return n.status === filter.status;
@@ -69,14 +80,14 @@ let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
 
   if (filter.range === '') {
     displayedData = displayedData;
-  } else{
+  } else {
     displayedData = displayedData.filter(
       (n) => {
         return n.range === filter.range;
       }
     );
   }
-  
+
   function isEmptyObject(obj) {
     return !Object.keys(obj).length;
   }
@@ -84,13 +95,18 @@ let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
   if (isEmptyObject(displayedData)) {
 
     displayedData = NoItem
-     
-  } 
+
+  }
 
   const applyFilter = (filter1, filter2, filter3, filter4) => {
 
     setFilter({ type: filter1, supplier: filter2, status: filter3, range: filter4 }); //update the state to be a new value
   }
+
+
+
+
+
 
   return (
     <main>
@@ -102,9 +118,9 @@ let [displayedSearchItems, setDisplayedSearchItems] = useState(props.items);
       </header>
 
       <div class="two-col-container">
-        <SideFilter applyFilterCallback={applyFilter} applySearchCallback={searchFilter}/>
+        <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
         <div className="flex-container">
-        <Items data={displayedData} handleClick={props.addCart}/>
+          <Items data={displayedData} handleClick={props.addCart} />
         </div>
 
 
