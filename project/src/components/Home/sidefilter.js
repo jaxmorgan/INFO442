@@ -98,15 +98,21 @@ export default function SideFilter(props) {
 
         <input className="text-specificity" id="text-input" placeholder="Search for a product..." value={query} type="search" onChange={handleChange} />
 
-        
 
         <fieldset>
-          <legend class="product-filters">Filters</legend>
+        <legend class="product-filters"></legend>
           <button className='btngo'>
           <div className="btn btn-light" id="apply-search" ref={ref2} onClick={handleSearch}>Go</div>
         </button>
 
         </fieldset>
+
+        <fieldset>
+        <legend class="product-filters">Filters</legend>
+
+        </fieldset>
+
+
 
         <div>
           <div>
