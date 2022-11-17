@@ -38,7 +38,7 @@ export default function Home(props) {
     //console.log(ItemsContent.filter(show => show.supplier.includes(search.query)));
 
 
-    displayedData = ItemsContent.filter(show => show.supplier.includes(search.query));
+    displayedData = ItemsContent.filter(show => show.supplier.includes(search.query)||show.name.includes(search.query)||show.status.includes(search.query)||show.type.includes(search.query));
   }
 
 
