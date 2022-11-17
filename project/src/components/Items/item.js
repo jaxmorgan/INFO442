@@ -5,7 +5,8 @@ export default function Item(props) {
 
     const handleButtonAddCart = e => {
         e.preventDefault()
-        props.addToCart(props.id)
+        props.addToCart(props.name)
+        console.log(props.name)
     }
 
 

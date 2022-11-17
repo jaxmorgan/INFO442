@@ -105,9 +105,8 @@ export default function Home(props) {
 
 
 
-
-
-
+  const addToCart = props.addToCart
+  
   return (
     <main>
       <header className="column-container">
@@ -120,7 +119,7 @@ export default function Home(props) {
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
         <div className="flex-container">
-          <Items data={displayedData} handleClick={props.addCart} />
+          <Items data={displayedData} addToCart={addToCart} />
         </div>
 
 

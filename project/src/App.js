@@ -26,26 +26,25 @@ export default function App(props) {
   // Routes replaces Switch and Navigate replaces Redirect
 
   const [show, setShow] = useState(true);
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([]);
 
-  const handleClick = (item) => {
-
+  const addToCart = (item) => {
     // Add to cart
-    // if (cart.includes(item)) {
-    //   // if item already in cart, add amount to the item
-    //   let i = cart.indexOf(item);
-    //   cart[i].amount += 1;
-    // } else {
-    //   setCart((cart) => [
-    //     ...cart,
-    //     { ...item, amount: 1 } // <-- initial amount 1
-    //   ]);
-    // }
-    setCart((cart) => [
-      ...cart,
-      { ...item, amount: 1 } // <-- initial amount 1
-    ]);
-    console.log(cart)
+    if (cart.filter(e => e.name === item).length > 0) {
+      // if item already in cart, add amount to the item
+      cart.map(cartItem => {
+        if (cartItem.name === item) {
+          cartItem.amount += 1;
+          console.log('amount plus 1');
+        }
+      })
+    } else {
+      setCart((cart) => [
+        ...cart,
+        { name: item, amount: 1 } // <-- initial amount 1
+      ]);
+      console.log(cart);
+    }
   };
   
   const queryString = window.location.search;
@@ -62,11 +61,11 @@ export default function App(props) {
       <Router>
         <NavBar />
         <Routes>
-          <Route index element={<Home/>} />
-          <Route path="/Home" element={<Home filter={queryFilter} addCart={handleClick}/>} />
+          <Route index element={<Home filter={queryFilter} addToCart={addToCart}/>} />
+          <Route path="/Home" element={<Home filter={queryFilter} addToCart={addToCart}/>} />
           <Route path="/" render={() => <Navigate to="/Home"/>} />
           <Route path="/About" element={<About />} />
-          <Route path="/Shop" element={<Home/>} />
+          <Route path="/Shop" element={<Home filter={queryFilter} addToCart={addToCart}/>} />
           <Route path="/Account" element={<Account />} />
           <Route path="/Cart" element={<Cart data={cart}/>} />
         </Routes>
