@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import  Item  from '../Items/item.js';
+import { ItemsContent } from '../../data/productsData';
 
 
 export default function Cart(props) {
@@ -83,13 +84,20 @@ export default function Cart(props) {
         setCvv(localStorage.getItem("inputValue-f"));
     }, []);
 
+    console.log(props.cart)
+    const displayData = props.cart.map((item) => {
+        ItemsContent.map((element, index) => {
+            if (element.name === item.name) {
+                <Item key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img}/>
+            }
+        })
+    })
+
     return (
         <div>
             <div className="two-col-container">
                 <div className="flex-container">
-                {props.data.map((element, index) =>
-                    <Item key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} />
-                )}
+                {displayData}
                 </div>
                 <div className="payment-form">
                     <div className="p-3 py-5">
