@@ -5,6 +5,8 @@ import SideFilter from './sidefilter';
 import { ItemsContent } from '../../data/productsData';
 import { useState } from 'react';
 import { NoItem } from '../../data/noData';
+import { useEffect } from 'react';
+
 
 export default function Home(props) {
 
@@ -14,9 +16,12 @@ export default function Home(props) {
 
   //SEARCH
 
-  const hookArraySearch = useState("");
-  const search = hookArraySearch[0];
-  const setSearch = hookArraySearch[1];
+  const value = 'defult';
+
+  const [search,setSearch] = useState(value);
+
+  useEffect(() => { setSearch(value)}, [value] )
+  
 
 
   const applySearch = (search1) => {
@@ -26,8 +31,13 @@ export default function Home(props) {
 
   }
 
+  
+  
+
+  
   if (search.query === '') {
-    console.log('no search')
+    //console.log('no search')
+    //console.log(search.query)
     displayedData = ItemsContent;
   } else {
 
@@ -38,7 +48,7 @@ export default function Home(props) {
     //console.log(ItemsContent.filter(show => show.supplier.includes(search.query)));
 
 
-    displayedData = ItemsContent.filter(show => show.supplier.includes(search.query)||show.name.includes(search.query)||show.status.includes(search.query)||show.type.includes(search.query));
+    displayedData = ItemsContent.filter(show => show.supplier.toLowerCase().includes(search.query)||show.name.toLowerCase().includes(search.query)||show.status.toLowerCase().includes(search.query)||show.type.toLowerCase().includes(search.query));
   }
 
 
