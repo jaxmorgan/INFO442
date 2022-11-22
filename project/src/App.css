@@ -131,8 +131,7 @@ a {
   background-color: #7e636f;
   color: white;  
   border-radius: 5%;
-  margin-top: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   margin-left: 100px;
   justify-content: center;
 }
@@ -174,31 +173,47 @@ a {
 }
 
 .btngo {
-  margin-top: 40px;
+  background-color: white;
+  margin-top: 25px;
   margin-left: 165px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   border-radius: 15px;
   border-style: hidden;
   font-family: krub, sans-serif;
 }
 
+#apply-search {
+  color: gray;
+}
+
 .btnApply {
   margin-top: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin-left: 150px;
   border-radius: 15px;
   border-style: hidden;
   font-family: krub, sans-serif;
+  background-color: white;
+}
+
+#apply-filters {
+  color: gray;
+  background-color: white;
 }
 
 #text-input {
   margin-left: 48px;
   margin-top: 15px;
   width: 300px;
+  border-color: white;
 }
 
 .text-specificity {
   height: 50px;
   position: absolute;
-  padding-left: 8px;
+  padding-left: 12px;
   border-radius: 5%;
 }
 
@@ -291,6 +306,13 @@ a {
   justify-content: center;
   text-align: center;
   margin-left: 145px;
+}
+
+.magnifying-image {
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  margin-left: 155px;
 }
 
 .insight-header {
@@ -645,6 +667,7 @@ footer {
   border-radius: 5%;
   border-style:hidden;
   margin-top: 25px;
+  padding-bottom: 25px;
   justify-content: center;
 }
 
@@ -667,6 +690,13 @@ footer {
   margin-left: 200px;
 }
 
+.magnifying-image {
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  margin-left: 200px;
+}
+
 .text-specificity {
   width: 285px;
   padding: 10px;
@@ -681,7 +711,6 @@ footer {
     margin-right: 10px;
     font-family: krub, sans-serif;
     height: 50px;
-    margin-bottom: 20px;
 }
 
 .check-container {
@@ -832,7 +861,7 @@ color: darkgreen;
 }
 
 .btngo {
-  margin-top: 45px;
+  margin-top: 20px;
   margin-left: 215px;
 }
 
@@ -840,12 +869,14 @@ color: darkgreen;
   margin-top: 15px;
   margin-left: 205px;
   margin-bottom: 0px;
+  background-color: white;
 }
 
 #text-input {
   margin-left: 48px;
-  margin-top: 15px;
+  margin-top: 5px;
   width: 400px;
+  border-color: white;
 }
 
 #range {
