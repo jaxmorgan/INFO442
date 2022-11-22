@@ -9,7 +9,7 @@ return (
           <div class="text-block">
             <p className="shop-sustainably-2">Why Source?</p>
             </div>
-            <iframe width="100%" height="700" src="https://www.youtube.com/embed/dhJY3Wb6jhg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="700" src="https://www.youtube.com/embed/1vhYlNm241I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </header>
 
       <div class = "container-about-page">
@@ -35,6 +35,8 @@ return (
             <li className="small-font"><span>Exhibit transparency by allowing information about their performance measured against B Lab’s standards to be publicly available on their B Corp profile on B Lab’s website.</span></li>
           </ul>
           <p className="small-font"><b>When you shop on Source, you can be assured that you’re making purchases that are good for the planet.</b></p>
+          <img className="leaf-image" src="..\..\..\img\leaf.png" />
+
           </div>
           </div>
     </div>

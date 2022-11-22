@@ -468,6 +468,12 @@ footer {
   padding: 15px;
 }
 
+.leaf-image {
+  height: 100px;
+  width: 100px;
+  margin-left: 250px;
+}
+
 .about-content {
     background-color: rgb(239, 245, 239);
     padding-bottom: 30px;
@@ -490,7 +496,6 @@ footer {
   font-size: 20px;
   color: white;
 }
-
   .big-font {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -840,7 +845,13 @@ color: darkgreen;
     padding-left: 200px;
     padding-right: 200px;
   }
-
+  
+  .leaf-image {
+    height: 100px;
+    width: 100px;
+    margin-left: 550px;
+  }
+  
 
 /*Home Image */
 .homeImage {
