@@ -90,7 +90,7 @@ export default function SideFilter(props) {
 
 
   return (
-    <section className="search-template">
+    <section>
       <div className="search">
         {/* <form className="form1" > */}
 
