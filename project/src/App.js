@@ -15,10 +15,7 @@ export default function App(props) {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 
-  const updatedCart = useEffect(() => {
-    // Update the document title using the browser API
-    console.log(cart);
-  }, [cart]);
+  
 
   const addToCart = (item) => {
     // Add to cart
@@ -27,7 +24,6 @@ export default function App(props) {
       cart.map(cartItem => {
         if (cartItem.name === item) {
           cartItem.amount += 1;
-          console.log('amount plus 1');
         }
       })
     } else {
@@ -38,6 +34,11 @@ export default function App(props) {
     }
   };
   
+  useEffect(() => {
+    // Update the document title using the browser API
+    console.log(cart);
+  }, [cart]);
+
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const queryFilter = {
@@ -58,7 +59,7 @@ export default function App(props) {
           <Route path="/About" element={<About />} />
           <Route path="/Shop" element={<Home filter={queryFilter} addToCart={addToCart}/>} />
           <Route path="/Account" element={<Account />} />
-          <Route path="/Cart" element={<Cart cart={updatedCart}/>} />
+          <Route path="/Cart" element={<Cart cart={cart} updateCart={setCart}/>} />
         </Routes>
       </Router>
       
