@@ -838,6 +838,16 @@ color: darkgreen;
   padding-right: 100px;
   }
 
+  .about-container {
+    margin-left: 350px;
+    margin-right: 100px;
+  }
+
+  .about-container2 {
+    margin-left: 350px;
+    margin-right: 100px;
+  }
+
   .about-content {
     text-align: center;
     background-color: rgb(245, 255, 245);
@@ -845,7 +855,7 @@ color: darkgreen;
     padding-left: 200px;
     padding-right: 200px;
   }
-  
+
   .leaf-image {
     height: 100px;
     width: 100px;
