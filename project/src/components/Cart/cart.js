@@ -78,6 +78,7 @@ export default function Cart(props) {
 
   console.log("HALLO");
   console.log(props.cart);
+  console.log(localStorage)
 
   return (
     <div>
@@ -159,20 +160,13 @@ export default function Cart(props) {
           </div>
         </div>
         <div className="col">
+          
           <div className="flex-container">
             {
               ItemsContent.map((element, index) => {
                 //if (element.name) {
                 {console.log(index)}
-                  <cartItem
-                    key={index}
-                    name={element.name}
-                    price={element.price}
-                    delivery={element.delivery}
-                    supplier={element.supplier}
-                    supplierLink={element.supplierLink}
-                    img={element.img}
-                  />;
+                <cartItem key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} />;
                 //}
               })
             }
