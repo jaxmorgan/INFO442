@@ -12,9 +12,9 @@ import { useState } from 'react';
 
 
 export default function App(props) {
+  localStorage.setItem('cart', [])
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
-
   
 
   const addToCart = (item) => {
@@ -36,7 +36,9 @@ export default function App(props) {
   
   useEffect(() => {
     // Update the document title using the browser API
-    console.log(cart);
+    localStorage.setItem('cart', JSON.stringify(cart))
+    console.log(localStorage)
+    console.log(cart)
   }, [cart]);
 
   const queryString = window.location.search;
