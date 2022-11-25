@@ -90,25 +90,27 @@ export default function SideFilter(props) {
 
 
   return (
-    <section className="search-template">
+    <section>
       <div className="search">
+        <div>
         {/* <form className="form1" > */}
 
-        
+        <img className="magnifying-image" src="..\..\..\img\searchIcon.png" />
 
+        <div>
         <input className="text-specificity" id="text-input" placeholder="Search for a product..." value={query} type="search" onChange={handleChange} />
-
+        </div>
 
         <fieldset>
         <legend class="product-filters"></legend>
           <button className='btngo'>
-          <div className="btn btn-light" id="apply-search" ref={ref2} onClick={handleSearch}>Go</div>
+          <div className="btn btn-white" id="apply-search" ref={ref2} onClick={handleSearch}>Go</div>
         </button>
 
         </fieldset>
 
         <fieldset>
-        <legend class="product-filters">Filters</legend>
+        <legend class="product-filters"></legend>
 
         </fieldset>
 
@@ -176,8 +178,9 @@ export default function SideFilter(props) {
           <div>
             <button className='btnApply'>
 
-              <div className="btn btn-light" id="apply-filters" ref={ref} onClick={handleClick}>Apply</div>
+              <div className="btn btn-white" id="apply-filters" ref={ref} onClick={handleClick}>Apply</div>
             </button>
+          </div>
           </div>
         </div>
 

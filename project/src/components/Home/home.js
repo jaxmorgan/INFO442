@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { NoItem } from '../../data/noData';
 import { useEffect } from 'react';
 
-
 export default function Home(props) {
 
 
