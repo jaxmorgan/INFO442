@@ -76,10 +76,12 @@ export default function Cart(props) {
     setCvv(localStorage.getItem("inputValue-f"));
   }, []);
 
-  console.log("HALLO");
+  //cart
   console.log(props.cart);
   console.log(localStorage)
 
+  const cart = ItemsContent.filter((item) => {props.cart.includes(item.name)})
+  console.log(cart)
   return (
     <div>
       <div className="two-col-container">
@@ -163,11 +165,11 @@ export default function Cart(props) {
           
           <div className="flex-container">
             {
-              ItemsContent.map((element, index) => {
-                //if (element.name) {
-                {console.log(index)}
-                <cartItem key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} />;
-                //}
+              cart.map((element, index) => {
+                if (element.name) {
+                {console.log(element.name)}
+                <cartItem key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} amount={element.amount}/>;
+                }
               })
             }
           </div>

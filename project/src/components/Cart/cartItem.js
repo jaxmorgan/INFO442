@@ -12,6 +12,7 @@ export default function cartItem(props) {
                     <p className="card-text-price">{props.price}</p>
                     <p className="card-text"> Delivery: {props.delivery}</p>
                     <p className="card-text"> Supplier: {props.supplier}</p>
+                    <p className="card-text"> Amount: {props.amount}</p>
                     <button className="supplier-button"><a href={props.supplierLink} target="blank">Supplier Sustainability</a></button>
                 </div>
             </div>

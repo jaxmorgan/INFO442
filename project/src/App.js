@@ -12,10 +12,12 @@ import { useState } from 'react';
 
 
 export default function App(props) {
-  localStorage.setItem('cart', [])
   const [show, setShow] = useState(true);
-  const [cart, setCart] = useState([]);
-  
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || []);
+
+  useEffect(() => {
+    setCart(JSON.parse(window.localStorage.getItem('cart')));
+  }, []);
 
   const addToCart = (item) => {
     // Add to cart
