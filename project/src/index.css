@@ -96,6 +96,7 @@ legend {
 
 input{
   margin-bottom: 10px;
+  color: black;
 }
 
 #nav-text {
@@ -110,4 +111,5 @@ input{
   height: 500px;
   width: 700px;
 }
+
 
