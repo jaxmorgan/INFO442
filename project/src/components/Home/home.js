@@ -17,10 +17,10 @@ export default function Home(props) {
 
   const value = 'defult';
 
-  const [search,setSearch] = useState(value);
+  const [search, setSearch] = useState(value);
 
-  useEffect(() => { setSearch(value)}, [value] )
-  
+  useEffect(() => { setSearch(value) }, [value])
+
 
 
   const applySearch = (search1) => {
@@ -30,24 +30,41 @@ export default function Home(props) {
 
   }
 
-  
-  
 
-  
-  if (search.query === '') {
+  let searchData = 'none';
+
+  if(search.query === undefined){
+
+    searchData = 'none'
+
+
+  }else{
+
+    searchData = search.query
+    
+
+  }
+
+
+
+
+
+
+
+  if (searchData === 'none') {
     //console.log('no search')
     //console.log(search.query)
     displayedData = ItemsContent;
   } else {
 
-  
+
     //need a way to filter data here
     // what in the type box already here
     //console.log('have search', search.query);
     //console.log(ItemsContent.filter(show => show.supplier.includes(search.query)));
 
 
-    displayedData = ItemsContent.filter(show => show.supplier.toLowerCase().includes(search.query)||show.name.toLowerCase().includes(search.query)||show.status.toLowerCase().includes(search.query)||show.type.toLowerCase().includes(search.query));
+    displayedData = ItemsContent.filter(show => show.supplier.toLowerCase().includes(searchData.toLowerCase()) || show.name.toLowerCase().includes(searchData.toLowerCase()) || show.status.toLowerCase().includes(searchData.toLowerCase()) || show.type.toLowerCase().includes(searchData.toLowerCase()));
   }
 
 
@@ -115,7 +132,7 @@ export default function Home(props) {
 
 
   const addToCart = props.addToCart
-  
+
   return (
     <main>
       <header className="column-container">
