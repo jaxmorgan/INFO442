@@ -448,10 +448,8 @@ footer {
 
 .about-container {
   background-color: #7e636f;
-  border-radius: 5%;
   color: white;
-  width: 1200px;
-  margin-left: 50px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
@@ -459,10 +457,8 @@ footer {
 
 .about-container2 {
   background-color: #6f7e63;
-  border-radius: 5%;
   color: white;
-  width: 1200px;
-  margin-left: 50px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
@@ -516,6 +512,7 @@ footer {
 
     .column-container-about {
         opacity: 0.85;
+        width: 100%;
         background-size: cover;
         background-position: center;
     }
@@ -838,22 +835,10 @@ color: darkgreen;
   padding-right: 100px;
   }
 
-  .about-container {
-    margin-left: 350px;
-    margin-right: 100px;
-  }
-
-  .about-container2 {
-    margin-left: 350px;
-    margin-right: 100px;
-  }
-
   .about-content {
     text-align: center;
     background-color: rgb(245, 255, 245);
-    padding-bottom: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
+    width: 100%;
   }
 
   .leaf-image {
@@ -984,6 +969,7 @@ color: darkgreen;
 
 .column-container-about {
   opacity: 0.85;
+  width: 100%;
   /* background-image: url('https://images.unsplash.com/photo-1580137189272-c9379f8864fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); */
   background-size: cover;
   background-position: center;
