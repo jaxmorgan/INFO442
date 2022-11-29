@@ -78,12 +78,17 @@ export default function Cart(props) {
     setCvv(localStorage.getItem("inputValue-f"));
   }, []);
 
-  console.log("HALLO");
+  //cart
   console.log(props.cart);
   console.log(localStorage)
 
+<<<<<<< HEAD
 
 
+=======
+  const cart = ItemsContent.filter((item) => {props.cart.includes(item.name)})
+  console.log(cart)
+>>>>>>> c62aea1bf50792202053c05b301dcd1a0424d4a0
   return (
     <div>
       <div className="two-col-container">
