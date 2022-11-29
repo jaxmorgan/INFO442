@@ -452,7 +452,9 @@ footer {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .about-container2 {
@@ -461,13 +463,15 @@ footer {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .leaf-image {
   height: 100px;
   width: 100px;
-  margin-left: 250px;
+  margin-left: 190px;
 }
 
 .about-content {
@@ -844,7 +848,7 @@ color: darkgreen;
   .leaf-image {
     height: 100px;
     width: 100px;
-    margin-left: 550px;
+    margin-left: 450px;
   }
   
 
