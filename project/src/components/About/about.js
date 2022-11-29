@@ -16,7 +16,7 @@ return (
         <div class = "row">
           <div class="about-container">
           <p className="small-font"><b>Source is on a mission to connect you with sustainable businesses for all of your home goods needs. We are committed to improving the current state of e-commerce through eliminating unsustainable consumer habits and mass production practices.</b></p>
-          <p className="small-font">Our suppliers are manually verified businesses who meet our minimum threshold requirements for sustainability. So, what do we look at specifically when it comes to our products and suppliers?:</p>
+          <p className="small-font">Our supplies are manually verified businesses who meet our minimum threshold requirements for sustainability. So, what do we look at specifically when it comes to our products and suppliers?:</p>
           <ul>
             <p><a className="about-categories" href="https://www.epa.gov/sustainability/sustainable-manufacturing#:~:text=Sustainable%20manufacturing%20is%20the%20creation,employee%2C%20community%20and%20product%20safety.">Manufacturing processes</a></p>
             <p><a className="about-categories" href="https://www.epa.gov/ghgemissions">Greenhouse gas emissions</a></p>
@@ -27,7 +27,7 @@ return (
           </ul>
           </div>
           <div class="about-container2">
-          <p className="small-font"><b>Many of our suppliers are B Corp Certified. What does this mean?</b></p>
+          <p className="small-font"><b>Many of our companies are B Corp Certified. What does this mean?</b></p>
           <p className="small-font">A B Corp Certification is a designation that a business is meeting high standards of verified performance, accountability, and transparency on factors from employee benefits and charitable giving to supply chain practices and input materials. In order to achieve certification, a company must: </p>
           <ul>
             <li className="small-font"><span>Demonstrate high social and environmental performance by achieving a B Impact Assessment score of 80 or above and passing their risk review. Multinational corporations must also meet baseline requirement standards.</span></li>
