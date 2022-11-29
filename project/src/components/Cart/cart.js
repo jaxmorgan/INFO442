@@ -1,7 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import cartItem from "./cartItem";
+import Item from '../Items/items';
+import Items from '../Items/items';
 import { ItemsContent } from "../../data/productsData";
+import cartItem from './cartItem'
 
 export default function Cart(props) {
   //first name
@@ -79,6 +81,8 @@ export default function Cart(props) {
   console.log("HALLO");
   console.log(props.cart);
   console.log(localStorage)
+
+
 
   return (
     <div>
@@ -160,13 +164,13 @@ export default function Cart(props) {
           </div>
         </div>
         <div className="col">
-          
+
           <div className="flex-container">
             {
               ItemsContent.map((element, index) => {
                 //if (element.name) {
                 {console.log(index)}
-                <cartItem key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} />;
+                <Item key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} />;
                 //}
               })
             }

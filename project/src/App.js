@@ -37,8 +37,6 @@ export default function App(props) {
   useEffect(() => {
     // Update the document title using the browser API
     localStorage.setItem('cart', JSON.stringify(cart))
-    console.log(localStorage)
-    console.log(cart)
   }, [cart]);
 
   const queryString = window.location.search;
