@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Item from '../Items/items';
+import Item from '../Items/item';
 import Items from '../Items/items';
 import { ItemsContent } from "../../data/productsData";
 import cartItem from './cartItem'
