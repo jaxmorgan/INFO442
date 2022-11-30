@@ -395,11 +395,15 @@ footer {
 .card {
   margin-bottom: 20px;
   width: 350px;
+  background-color: white;
+  width: 350px;
+  margin: 25px;
 }
 
 .flex-container {
   justify-content: center;
   padding-left: 65px;
+  display: flex;
 }
 
 .shop-sustainably {
@@ -814,6 +818,7 @@ margin-bottom: 20px;
 }
 
 .card {
+flex: 0, 0, 200px;
 background-color: white;
 width: 350px;
 border-radius: 10px;

@@ -268,6 +268,7 @@ export default function Item() {
     
         <>
         <h1>ITEMS</h1>
+        <div>
         <div className="card">
         {products.map((product, idx) => (
         <div className="card-body" key={idx}>
@@ -280,6 +281,7 @@ export default function Item() {
         <button className="supplier-button"><a href={product.supplierLink} target="blank">Supplier Sustainability</a></button>
         </div>
     ))}
+    </div>
     </div>
     </>
     </div>
