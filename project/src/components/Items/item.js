@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import Cart from '../Cart/cart';
 
 export default function Item() {
 
@@ -9,11 +10,12 @@ export default function Item() {
     //     console.log(props.name)
     // }
 
-    const ITEM_PRODUCTS = 'products';
-    const ITEM_CART = 'cart';
+     const ITEM_PRODUCTS = 'products';
+     const ITEM_CART = 'cart';
 
-    const [cart, setCart] = useState([]);
-    const [page, setPage] = useState(ITEM_PRODUCTS);
+     const [cart, setCart] = useState([]);
+     const [page, setPage] = useState(ITEM_PRODUCTS);
+   
 
     const [products] = useState([
     {"name":"Penn Chair", 
@@ -235,7 +237,7 @@ export default function Item() {
 
     const addToCart = (product) => {
         console.log('hello world');
-        setCart([...cart, {...product }]);
+        setCart([...cart, product ]);
     };
 
     const removeFromCart = (removeProduct) => {
@@ -250,14 +252,14 @@ export default function Item() {
     const renderProducts = () => (
         <>
                 <h1>ITEMS</h1>
-                <div className="products">
+                <div className="card">
                 {products.map((product, idx) => (
-                <div className="product" key={idx}>
+                <div className="card-body" key={idx}>
                 <img src={product.img} className="card-img-top" alt={product.id}></img>
                 <h2 className="card-title">{product.name}</h2>
-                {/* <p className="card-text-price">{product.price}</p>
+                <p className="card-text-price">{product.price}</p>
                 <p className="card-text"> Delivery: {product.delivery}</p>
-                <p className="card-text"> Supplier: {product.supplier}</p> */}
+                <p className="card-text"> Supplier: {product.supplier}</p>
                 <button onClick={() => addToCart(product)}>Add to Cart</button>
                 </div>
             ))}
@@ -268,14 +270,14 @@ export default function Item() {
     const renderCart = () => (
         <>
         <h1>CART</h1>
-        <div className="products">
+        <div className="">
         {cart.map((product, idx) => (
-        <div className="product" key={idx}>
+        <div className="card-body" key={idx}>
         <img src={product.img} className="card-img-top" alt={product.id}></img>
         <h2 className="card-title">{product.name}</h2>
-        {/* <p className="card-text-price">{product.price}</p>
+        <p className="card-text-price">{product.price}</p>
         <p className="card-text"> Delivery: {product.delivery}</p>
-        <p className="card-text"> Supplier: {product.supplier}</p> */}
+        <p className="card-text"> Supplier: {product.supplier}</p>
         <button onClick={() => removeFromCart(product)}>Remove</button>
         </div>
     ))}
@@ -284,14 +286,39 @@ export default function Item() {
 );
 
     return (
+        <div>
         <div className="App">
-            <header>
-                <button onClick={() => navigateTo(ITEM_CART)}>Visit Cart({cart.length})</button>
-                <button onClick={() => navigateTo(ITEM_PRODUCTS)}>Shop Products</button>
-            </header>
-            {page === ITEM_PRODUCTS && renderProducts()}
-            {page === ITEM_CART && renderCart()}
-            </div>
+      <header>
+        <button onClick={() => navigateTo(ITEM_CART)}>
+          Go to Cart ({cart.length})
+        </button>
+
+        <button onClick={() => navigateTo(ITEM_PRODUCTS)}>
+          View Products
+        </button>
+      </header>
+      {page === ITEM_PRODUCTS && renderProducts()}
+      {page === ITEM_CART && (
+        <Cart cart={cart} removeFromCart={removeFromCart} />
+      )}
+    </div>
+    
+        <>
+        <h1>ITEMS</h1>
+        <div className="card">
+        {products.map((product, idx) => (
+        <div className="card-body" key={idx}>
+        <img src={product.img} className="card-img-top" alt={product.id}></img>
+        <h2 className="card-title">{product.name}</h2>
+        <p className="card-text-price">{product.price}</p>
+        <p className="card-text"> Delivery: {product.delivery}</p>
+        <p className="card-text"> Supplier: {product.supplier}</p>
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
+        </div>
+    ))}
+    </div>
+    </>
+    </div>
         );
     }
 
