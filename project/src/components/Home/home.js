@@ -145,7 +145,7 @@ export default function Home(props) {
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
         <div className="flex-container">
-          <Items data={displayedData} addToCart={addToCart} />
+          <Item data={displayedData} />
         </div>
 
 
