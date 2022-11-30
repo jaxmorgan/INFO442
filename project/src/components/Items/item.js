@@ -249,42 +249,6 @@ export default function Item() {
         setPage(cartPage);
     };
 
-    const renderProducts = () => (
-        <>
-                <h1>ITEMS</h1>
-                <div className="card">
-                {products.map((product, idx) => (
-                <div className="card-body" key={idx}>
-                <img src={product.img} className="card-img-top" alt={product.id}></img>
-                <h2 className="card-title">{product.name}</h2>
-                <p className="card-text-price">{product.price}</p>
-                <p className="card-text"> Delivery: {product.delivery}</p>
-                <p className="card-text"> Supplier: {product.supplier}</p>
-                <button onClick={() => addToCart(product)}>Add to Cart</button>
-                </div>
-            ))}
-            </div>
-            </>
-    );
-
-    const renderCart = () => (
-        <>
-        <h1>CART</h1>
-        <div className="">
-        {cart.map((product, idx) => (
-        <div className="card-body" key={idx}>
-        <img src={product.img} className="card-img-top" alt={product.id}></img>
-        <h2 className="card-title">{product.name}</h2>
-        <p className="card-text-price">{product.price}</p>
-        <p className="card-text"> Delivery: {product.delivery}</p>
-        <p className="card-text"> Supplier: {product.supplier}</p>
-        <button onClick={() => removeFromCart(product)}>Remove</button>
-        </div>
-    ))}
-    </div>
-    </>
-);
-
     return (
         <div>
         <div className="App">
@@ -297,7 +261,6 @@ export default function Item() {
           View Products
         </button>
       </header>
-      {page === ITEM_PRODUCTS && renderProducts()}
       {page === ITEM_CART && (
         <Cart cart={cart} removeFromCart={removeFromCart} />
       )}
@@ -313,7 +276,8 @@ export default function Item() {
         <p className="card-text-price">{product.price}</p>
         <p className="card-text"> Delivery: {product.delivery}</p>
         <p className="card-text"> Supplier: {product.supplier}</p>
-        <button onClick={() => addToCart(product)}>Add to Cart</button>
+        <button className="cart-button" onClick={() => addToCart(product)}><img className="add-to-cart" src="..\..\..\img\cart-icon-3.png"/></button>
+        <button className="supplier-button"><a href={product.supplierLink} target="blank">Supplier Sustainability</a></button>
         </div>
     ))}
     </div>
