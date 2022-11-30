@@ -3,9 +3,8 @@ import { useState, useEffect } from "react";
 import Item from '../Items/item';
 import Items from '../Items/items';
 import { ItemsContent } from "../../data/productsData";
-import cartItem from './cartItem'
 
-export default function Cart(props) {
+export default function Cart({cart, setCart}) {
   //first name
   const [cardName, setCardName] = useState("");
 
@@ -78,12 +77,38 @@ export default function Cart(props) {
     setCvv(localStorage.getItem("inputValue-f"));
   }, []);
 
-  //cart
-  console.log(props.cart);
-  console.log(localStorage)
 
-  const cart = ItemsContent.filter((item) => {props.cart.includes(item.name)})
-  console.log(cart)
+
+  //THIS TAKES CARE OF CART ITEMS
+
+  const getTotalSum = () => {
+    return cart.reduce(
+      (sum, { cost, quantity }) => sum + cost * quantity,
+      0
+    );
+  };
+
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  const setQuantity = (product, amount) => {
+    const newCart = [...cart];
+    newCart.find(
+      (item) => item.name === product.name
+    ).quantity = amount;
+    setCart(newCart);
+  };
+
+  const removeFromCart = (productToRemove) => {
+    setCart(
+      cart.filter((product) => product !== productToRemove)
+    );
+  };
+
+  // const cart = ItemsContent.filter((item) => {props.cart.includes(item.name)})
+  // console.log(cart)
+  
   return (
     <div>
       <div className="two-col-container">
@@ -166,14 +191,43 @@ export default function Cart(props) {
         <div className="col">
 
           <div className="flex-container">
-            {
+            {/* {
               ItemsContent.map((element, index) => {
                 //if (element.name) {
                 {console.log(index)}
                 <Item key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} />;
                 //}
               })
-            }
+            } */}
+      <>
+      <h1>Cart</h1>
+      {cart.length > 0 && (
+        <button onClick={clearCart}>Clear Cart</button>
+      )}
+      <div className="products">
+        {cart.map((product, idx) => (
+          <div className="product" key={idx}>
+            <h3>{product.name}</h3>
+            <h4>${product.cost}</h4>
+            <input
+              value={product.quantity}
+              onChange={(e) =>
+                setQuantity(
+                  product,
+                  parseInt(e.target.value)
+                )
+              }
+            />
+            <img src={product.image} alt={product.name} />
+            <button onClick={() => removeFromCart(product)}>
+              Remove
+            </button>
+          </div>
+        ))}
+      </div>
+
+      <div>Total Cost: ${getTotalSum()}</div>
+    </>
           </div>
         </div>
       </div>
