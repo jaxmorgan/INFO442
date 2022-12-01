@@ -9,8 +9,8 @@ export default function Items(props) {
     
     return (
       <main>
-        <div className="flex-container">
-          <Item />
+        <div className="">
+            <Item />
         </div>
       </main>
     )

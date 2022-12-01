@@ -251,13 +251,13 @@ export default function Item() {
 
     return (
         <div>
-        <div className="App">
+        <div>
       <header>
-        <button onClick={() => navigateTo(ITEM_CART)}>
+        <button className="enterCart" onClick={() => navigateTo(ITEM_CART)}>
           Go to Cart ({cart.length})
         </button>
 
-        <button onClick={() => navigateTo(ITEM_PRODUCTS)}>
+        <button className="enterShopping" onClick={() => navigateTo(ITEM_PRODUCTS)}>
           View Products
         </button>
       </header>
@@ -265,13 +265,9 @@ export default function Item() {
         <Cart cart={cart} removeFromCart={removeFromCart} />
       )}
     </div>
-    
-        <>
-        <h1>ITEMS</h1>
-        <div>
-        <div className="card">
+    <div  className="card" >
         {products.map((product, idx) => (
-        <div className="card-body" key={idx}>
+        <div className="product" key={idx}>
         <img src={product.img} className="card-img-top" alt={product.id}></img>
         <h2 className="card-title">{product.name}</h2>
         <p className="card-text-price">{product.price}</p>
@@ -280,11 +276,9 @@ export default function Item() {
         <button className="cart-button" onClick={() => addToCart(product)}><img className="add-to-cart" src="..\..\..\img\cart-icon-3.png"/></button>
         <button className="supplier-button"><a href={product.supplierLink} target="blank">Supplier Sustainability</a></button>
         </div>
-    ))}
-    </div>
-    </div>
-    </>
-    </div>
+        ))}
+        </div>
+     </div>
         );
     }
 

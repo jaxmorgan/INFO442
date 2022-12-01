@@ -81,17 +81,6 @@ export default function Cart({cart, setCart}) {
 
   //THIS TAKES CARE OF CART ITEMS
 
-  const getTotalSum = () => {
-    return cart.reduce(
-      (sum, { cost, quantity }) => sum + cost * quantity,
-      0
-    );
-  };
-
-  const clearCart = () => {
-    setCart([]);
-  };
-
   const removeFromCart = (removeProduct) => {
       cart.filter((product) => product !== removeProduct);
   };
@@ -190,10 +179,6 @@ export default function Cart({cart, setCart}) {
               })
             } */}
       <>
-      <h1>Cart</h1>
-      {cart.length > 0 && (
-        <button onClick={clearCart}>Clear Cart</button>
-      )}
       <div className="card">
         {cart.map((product, idx) => (
           <div className="product" key={idx}>
@@ -202,24 +187,16 @@ export default function Cart({cart, setCart}) {
         <p className="card-text-price">{product.price}</p>
         <p className="card-text"> Delivery: {product.delivery}</p>
         <p className="card-text"> Supplier: {product.supplier}</p>
-        <button onClick={() => removeFromCart(product)}>
+        <button className="remove-product" onClick={() => removeFromCart(product)}>
               Remove
             </button>
           </div>
         ))}
       </div>
-
-      <div>Total Cost: ${getTotalSum()}</div>
     </>
           </div>
         </div>
       </div>
-      <footer>
-        <div>
-          <p>Source</p>
-          <p>&copy; 2022 INFO442 Project</p>
-        </div>
-      </footer>
     </div>
   );
 }

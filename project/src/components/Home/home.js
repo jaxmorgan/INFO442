@@ -129,10 +129,6 @@ export default function Home(props) {
     setFilter({ type: filter1, supplier: filter2, status: filter3, range: filter4 }); //update the state to be a new value
   }
 
-
-
-  const addToCart = props.addToCart
-
   return (
     <main>
       <header className="column-container">
@@ -145,7 +141,7 @@ export default function Home(props) {
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
         <div className="flex-container">
-          <Item />
+          <Items data={displayedData} />
         </div>
 
 
