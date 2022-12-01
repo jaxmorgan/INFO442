@@ -5,19 +5,10 @@ import Item from '../Items/item';
 import Items from '../Items/items';
 import { ItemsContent } from "../../data/productsData";
 
-export default function Cart(props) {
-
-  const {cart, setCart} = props
-
-
-
+export default function Cart({cart, setCart} ) {
 
   //first name
   const [cardName, setCardName] = useState("");
-
-
-
-
 
   const handleChangeA = (e) => {
     setCardName(e.target.value);
