@@ -22,7 +22,7 @@ export default function Item(props) {
           <p className="card-text-price">{props.price}</p>
           <p className="card-text"> Delivery: {props.delivery}</p>
           <p className="card-text"> Supplier: {props.supplier}</p>
-          <div className="cart-button" id="cart" onClick= {props.addToCart}> <img className="add-to-cart" src="..\..\..\img\cart-icon-3.png"/> </div>
+          <div className="cart-button" id="cart" > <img className="add-to-cart"  onClick= {props.addToCart}  src="..\..\..\img\cart-icon-3.png"/> </div>
           <button className="supplier-button"><a href={props.supplierLink} target="blank">Supplier Sustainability</a></button>
         </div>
       </div>
