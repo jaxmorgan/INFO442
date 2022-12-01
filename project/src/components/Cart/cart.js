@@ -90,7 +90,7 @@ export default function Cart({cart, setCart}) {
 
   return (
     <div>
-      <div className="two-col-container">
+      <div className="">
         <div className="col">
           <div className="payment-form">
             <div className="p-3 py-5">
@@ -179,9 +179,9 @@ export default function Cart({cart, setCart}) {
               })
             } */}
       <>
-      <div className="card">
+      <div className="flex-container">
         {cart.map((product, idx) => (
-          <div className="product" key={idx}>
+          <div className="card" key={idx}>
           <img src={product.img} className="card-img-top" alt={product.id}></img>
         <h2 className="card-title">{product.name}</h2>
         <p className="card-text-price">{product.price}</p>

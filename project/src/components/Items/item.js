@@ -265,16 +265,16 @@ export default function Item() {
         <Cart cart={cart} removeFromCart={removeFromCart} />
       )}
     </div>
-    <div  className="card" >
+    <div  className="flex-container" >
         {products.map((product, idx) => (
-        <div className="product" key={idx}>
+        <div className="card" key={idx}>
         <img src={product.img} className="card-img-top" alt={product.id}></img>
         <h2 className="card-title">{product.name}</h2>
         <p className="card-text-price">{product.price}</p>
         <p className="card-text"> Delivery: {product.delivery}</p>
         <p className="card-text"> Supplier: {product.supplier}</p>
         <button className="cart-button" onClick={() => addToCart(product)}><img className="add-to-cart" src="..\..\..\img\cart-icon-3.png"/></button>
-        <button className="supplier-button"><a href={product.supplierLink} target="blank">Supplier Sustainability</a></button>
+        {/* <button className="supplier-button"><a href={product.supplierLink} target="blank">Supplier Sustainability</a></button> */}
         </div>
         ))}
         </div>

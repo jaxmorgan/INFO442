@@ -140,7 +140,7 @@ export default function Home(props) {
 
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
-        <div className="flex-container">
+        <div className="">
           <Items data={displayedData} />
         </div>
 

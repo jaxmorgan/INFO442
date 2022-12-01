@@ -267,11 +267,12 @@ a {
 .cart-button {
   border: 0px;
   background-color: white;
-  margin: 0px;
+  margin-bottom: 15px;
 }
 
 .add-to-cart {
   border-radius: 25%;
+  margin-left: 0;
 }
 
 .enterCart {
@@ -316,8 +317,8 @@ a {
 }
 
 .supplier-button {
-  margin-left: 30px;
-  height: 60px;
+  height: 50px;
+  width: 200px;
   color: white;
   background-color: #637b7e;
   border: none;
@@ -447,7 +448,6 @@ footer {
 }
 
 .flex-container {
-  justify-content: center;
   padding-left: 65px;
 }
 
@@ -487,10 +487,6 @@ footer {
 /*End of Home Image + content */
 
 /* Cart */
-.payment-form {
-  padding-left: 75px;
-  padding-right: 75px;
-}
 
 /* End of Cart */
 
@@ -720,7 +716,6 @@ footer {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
 }
 
