@@ -6,6 +6,7 @@ import { ItemsContent } from '../../data/productsData';
 import { useState } from 'react';
 import { NoItem } from '../../data/noData';
 import { useEffect } from 'react';
+import Cart from '../Cart/cart';
 
 export default function Home(props) {
 
@@ -129,6 +130,36 @@ export default function Home(props) {
     setFilter({ type: filter1, supplier: filter2, status: filter3, range: filter4 }); //update the state to be a new value
   }
 
+
+  const ITEM_PRODUCTS = 'products';
+  const ITEM_CART = 'cart';
+  const [page, setPage] = useState(ITEM_PRODUCTS);
+
+
+
+
+  const navigateTo = (cartPage) => {
+    setPage(cartPage);
+  };
+
+
+
+  const [cart, setCart] = useState([]);
+
+
+  const addToCart = (product) => {  
+    setCart([...cart, product]);
+    console.log(product);
+  };
+
+  const removeFromCart = (removeProduct) => {
+    setCart(cart.filter((product) => product !== removeProduct)
+    );
+  };
+
+
+
+
   return (
     <main>
       <header className="column-container">
@@ -138,10 +169,27 @@ export default function Home(props) {
         </div>
       </header>
 
+      <div>
+        <header>
+          <button className="enterCart" onClick={() => navigateTo(ITEM_CART)}>
+            Go to Cart ({cart.length})
+          </button>
+
+          <button className="enterShopping" onClick={() => navigateTo(ITEM_PRODUCTS)}>
+            View Products
+          </button>
+        </header>
+        {page === ITEM_CART && (
+          <Cart cart={cart} setCart={setCart} />
+        )}
+      </div>
+
+
+
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
         <div className="">
-          <Item data={displayedData} />
+          <Items data={displayedData} addToCart={addToCart}/>
         </div>
 
 
