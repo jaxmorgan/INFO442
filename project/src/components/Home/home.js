@@ -10,6 +10,10 @@ import Cart from '../Cart/cart';
 
 export default function Home(props) {
 
+  const [products] = useState(ItemsContent);
+
+  //console.log(products)
+
 
   let displayedData;
 
@@ -55,7 +59,7 @@ export default function Home(props) {
   if (searchData === 'none') {
     //console.log('no search')
     //console.log(search.query)
-    displayedData = ItemsContent;
+    displayedData = products;
   } else {
 
 
@@ -65,7 +69,7 @@ export default function Home(props) {
     //console.log(ItemsContent.filter(show => show.supplier.includes(search.query)));
 
 
-    displayedData = ItemsContent.filter(show => show.supplier.toLowerCase().includes(searchData.toLowerCase()) || show.name.toLowerCase().includes(searchData.toLowerCase()) || show.status.toLowerCase().includes(searchData.toLowerCase()) || show.type.toLowerCase().includes(searchData.toLowerCase()));
+    displayedData = products.filter(show => show.supplier.toLowerCase().includes(searchData.toLowerCase()) || show.name.toLowerCase().includes(searchData.toLowerCase()) || show.status.toLowerCase().includes(searchData.toLowerCase()) || show.type.toLowerCase().includes(searchData.toLowerCase()));
   }
 
 
@@ -78,7 +82,7 @@ export default function Home(props) {
   if (filter.type === "Show all types" || filter.type === '') {
     displayedData = displayedData;
   } else {
-    displayedData = ItemsContent.filter(
+    displayedData = products.filter(
       (n) => {
         return n.type === filter.type;
       }
