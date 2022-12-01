@@ -155,6 +155,7 @@ export default function Home(props) {
   const addToCart = (product) => {  
     setCart([...cart, product]);
     console.log(product);
+    console.log(cart);
   };
 
   const removeFromCart = (removeProduct) => {

@@ -98,6 +98,13 @@ const navigateConfirmation = () => {
   navigate('/verification');
 };
 
+  const getCartTotal = () => {
+    return cart.reduce(
+      (sum, { quantity }) => sum + quantity,
+      0
+    );
+  };
+
 
   // const cart = ItemsContent.filter((item) => {props.cart.includes(item.name)})
   // console.log(cart)
@@ -201,6 +208,7 @@ const navigateConfirmation = () => {
         <p className="card-text-price">{product.price}</p>
         <p className="card-text"> Delivery: {product.delivery}</p>
         <p className="card-text"> Supplier: {product.supplier}</p>
+        <p className="card-text"> {cart.length} items in cart</p>
         <button className="remove-product" onClick={() => removeFromCart(product)}>
               Remove
             </button>
