@@ -12,6 +12,7 @@ export default function Home(props) {
 
   const [products] = useState(ItemsContent);
 
+
   //console.log(products)
 
 
@@ -209,12 +210,10 @@ export default function Home(props) {
         )}
       </div>
 
-
-
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
         <div className="">
-          <Items data={displayedData} addToCart={addToCart}/>
+          <Item data={displayedData} addToCart={addToCart}/>
         </div>
 
 
