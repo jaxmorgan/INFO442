@@ -1,4 +1,5 @@
 import React from "react";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import { useState, useEffect } from "react";
 import Item from '../Items/item';
 import Items from '../Items/items';
@@ -82,8 +83,18 @@ export default function Cart({cart, setCart}) {
   //THIS TAKES CARE OF CART ITEMS
 
   const removeFromCart = (removeProduct) => {
-      cart.filter((product) => product !== removeProduct);
+    setCart(
+      cart.filter((product) => product !== removeProduct)
+    );
   };
+
+
+const navigate = useNavigate();
+
+const navigateConfirmation = () => {
+  navigate('/verification');
+};
+
 
   // const cart = ItemsContent.filter((item) => {props.cart.includes(item.name)})
   // console.log(cart)
@@ -160,7 +171,7 @@ export default function Cart({cart, setCart}) {
                 </div>
               </div>
               <div className="button-text">
-                <button className="btn btn-primary" type="button">
+                <button onClick={navigateConfirmation} className="btn btn-primary" type="button">
                   Purchase
                 </button>
               </div>

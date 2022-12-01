@@ -612,6 +612,24 @@ footer {
     }
 /*End of About */
 
+.purchase-confirmation {
+  padding-top: 200px;
+}
+
+.shop-sustainably-confirmation {
+  margin: 0px 25px;
+  font-family: sans-serif;
+  color: #7e636f;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: 900;
+  font-size: 70px;
+  letter-spacing: 3px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 600px;
+}
+
 /*Profile */
 .col-md-12 {
   padding-bottom: 20px;
@@ -711,6 +729,14 @@ footer {
 
 /* responsive design for larger screens */
 @media (min-width: 768px) {
+
+  .enterCart {
+    margin-left: 80px;
+  }
+  
+  .enterShopping {
+    margin-left: 80px;
+  }
 
 /* items on main page */
 .flex-container {

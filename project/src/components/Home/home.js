@@ -141,7 +141,7 @@ export default function Home(props) {
       <div class="two-col-container">
         <SideFilter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />
         <div className="">
-          <Items data={displayedData} />
+          <Item data={displayedData} />
         </div>
 
 

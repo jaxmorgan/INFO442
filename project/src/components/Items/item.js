@@ -262,7 +262,7 @@ export default function Item() {
         </button>
       </header>
       {page === ITEM_CART && (
-        <Cart cart={cart} removeFromCart={removeFromCart} />
+        <Cart cart={cart} setCart={setCart} />
       )}
     </div>
     <div  className="flex-container" >
