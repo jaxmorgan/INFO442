@@ -151,33 +151,16 @@ export default function Home(props) {
 
   const [cart, setCart] = useState([]);
 
-  const[testCart] = useState([
-
-    {"name":"Penn Chair", 
-    "type":"chair", 
-    "price":"$174.99",
-    "range":"low",
-    "delivery":"1-2 days",
-    "img":"./img/penn-chair-o.jpg", 
-    "status": "new",
-    "id":"1", 
-    "supplier":"West Elm", 
-    "supplierLink":"https://www.westelm.com/pages/about-west-elm/?cm_re=sitewidebanner-_-default-_-Sustainability", 
-    "addedToCart":"No"}
-
-  ])
-
-
+  useEffect(() => {
+    // Update the document title using the browser API
+    setCart(cart)
+  }, [cart]);
   const addToCart = (product) => {  
-    
-    product = testCart;
     //setCart([...cart, product]);
     const newCart = [...cart];
     newCart.push(product);
     setCart(newCart);
 
-
-    console.log(product);
     console.log(cart);
 
   };
