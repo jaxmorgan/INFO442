@@ -27,51 +27,9 @@ export default function NavBar() {
             <li><a className="navigator" href="/Home">Shop</a></li>
             <li><a className="navigator" href="/About">About</a></li>
             <li><a className="navigator" href="/Account">Account</a></li>
-            <li><a className="navigator" href="/Cart">Cart</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    /*<header>
-      <div className="container">
-      <div className="navbar">  
-      <Nav>
-      <button className="hamburgerButton" state={hamburgerOpen ? "Close" : "Open"} onClick={handleToggle}><img src="img/hamburger.jpg" className="ham-icon" alt="hamburger icon" /></button>
-        <Nav.Item>
-          <a href="/Home" ><img className="logo" src="..\..\..\img\source-logo.png" alt="Source logo" /></a>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Shop" id="nav-text" aria-label="">
-            Shop
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/About" id="nav-text" aria-label="">
-            About
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <InputGroup className="headerSearch">
-            <Input placeholder="Search"/>
-            <Button>
-              Go
-            </Button>
-          </InputGroup>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Account" id="nav-text" aria-label="">
-            Account
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Cart" id="nav-text" aria-label="">
-            Cart
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
-      </div>
-      </div>
-    </header>
-    */
   );
 }

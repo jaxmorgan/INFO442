@@ -35,7 +35,6 @@ return (
             <li className="small-font"><span>Exhibit transparency by allowing information about their performance measured against B Lab’s standards to be publicly available on their B Corp profile on B Lab’s website.</span></li>
           </ul>
           <p className="small-font"><b>When you shop on Source, you can be assured that you’re making purchases that are good for the planet.</b></p>
-          <img className="leaf-image" src="..\..\..\img\leaf.png" />
 
           </div>
           </div>

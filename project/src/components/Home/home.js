@@ -149,43 +149,20 @@ export default function Home(props) {
 
 
 
-  const [cart, setCart] = useState([
+  const [cart, setCart] = useState([]);
 
-    {"name":"Penn Chair", 
-    "type":"chair", 
-    "price":"$174.99",
-    "range":"low",
-    "delivery":"1-2 days",
-    "img":"./img/penn-chair-o.jpg", 
-    "status": "new",
-    "id":"1", 
-    "supplier":"West Elm", 
-    "supplierLink":"https://www.westelm.com/pages/about-west-elm/?cm_re=sitewidebanner-_-default-_-Sustainability", 
-    "addedToCart":"No"},
-    
-    {"name":"The City Table", 
-    "type":"table", 
-    "price":"$297.99",
-    "range":"low",
-    "delivery":"Next Day",
-    "img":"./img/city-table.webp", 
-    "status": "new",
-    "id":"2", 
-    "supplier":"Sabai", 
-    "supplierLink":"https://sabai.design/pages/sustainability", 
-    "addedToCart":"No"}
-    ]);
-
-
+  useEffect(() => {
+    // Update the document title using the browser API
+    setCart(cart)
+  }, [cart]);
   const addToCart = (product) => {  
     //setCart([...cart, product]);
     const newCart = [...cart];
     newCart.push(product);
     setCart(newCart);
 
-
-    console.log(product);
     console.log(cart);
+
   };
 
   const removeFromCart = (removeProduct) => {

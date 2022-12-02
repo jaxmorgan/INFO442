@@ -261,44 +261,45 @@ a {
 .add-to-cart {
   height: 70px;
   width: 70px;
-  
+  border: none;
 }
 
 .cart-button {
-  border: 0px;
-  background-color: white;
   margin-bottom: 15px;
+  background-color: white;
+  border: none;
 }
 
 .add-to-cart {
   border-radius: 25%;
-  margin-left: 0;
+  border: none;
+  background-color: white;
 }
 
 .enterCart {
-  margin-left: 30px;
-  height: 70px;
-  width: 200px;
-  margin-bottom: 20px;
+  margin-left: 75px;
+  height: 80px;
+  width: 220px;
+  margin-top: 50px;
   color: white;
-  background-color: #7e636f;
+  background-color: #6f7e63;
   border: none;
   font-family: krub, sans-serif;
   border-radius: 25px;
-  font-size: 25px;
+  font-size: 30px;
   padding: 5px;
 }
 
 .enterShopping {
   margin-left: 30px;
-  height: 70px;
-  width: 200px;
+  height: 80px;
+  width: 225px;
   color: white;
-  background-color: #48533f;
+  background-color: #7e636f;
   border: none;
   font-family: krub, sans-serif;
   border-radius: 25px;
-  font-size: 25px;
+  font-size: 30px;
   padding: 5px;
 }
 
@@ -324,6 +325,23 @@ a {
   border: none;
   font-family: krub, sans-serif;
   border-radius: 50px;
+  margin-left: 20px;
+}
+
+.verification-button {
+  height: 85px;
+  width: 400px;
+  color: white;
+  background-color: #637b7e;
+  border: none;
+  font-family: krub, sans-serif;
+  border-radius: 50px;
+  margin-left: 20px;
+  font-size: 35px;
+  margin-top: 70px;
+  margin-bottom: 600px;
+  margin-left: 50px;
+  text-align: center;
 }
 
 .supplier-button a {
@@ -331,6 +349,15 @@ a {
 }
 
 .supplier-button a:link, .supplier-button a:visited, .supplier-button a:hover, .supplier-button a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.verification-button a {
+  color: white;
+}
+
+.verification-button a:link, .verification-button a:visited, .verification-button a:hover, .verification-button a:active {
   text-decoration: none;
   color: white;
 }
@@ -627,7 +654,7 @@ footer {
   letter-spacing: 3px;
   padding-right: 100px;
   padding-left: 100px;
-  padding-bottom: 600px;
+  margin-bottom: 600px;
 }
 
 /*Profile */
@@ -730,13 +757,9 @@ footer {
 /* responsive design for larger screens */
 @media (min-width: 768px) {
 
-  .enterCart {
-    margin-left: 80px;
-  }
-  
-  .enterShopping {
-    margin-left: 80px;
-  }
+.enterCart {
+  margin-left: 120px;
+}
 
 /* items on main page */
 .flex-container {
