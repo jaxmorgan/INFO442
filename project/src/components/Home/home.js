@@ -149,7 +149,9 @@ export default function Home(props) {
 
 
 
-  const [cart, setCart] = useState([
+  const [cart, setCart] = useState([]);
+
+  const[testCart] = useState([
 
     {"name":"Penn Chair", 
     "type":"chair", 
@@ -163,11 +165,12 @@ export default function Home(props) {
     "supplierLink":"https://www.westelm.com/pages/about-west-elm/?cm_re=sitewidebanner-_-default-_-Sustainability", 
     "addedToCart":"No"}
 
-
-  ]);
+  ])
 
 
   const addToCart = (product) => {  
+    
+    product = testCart;
     //setCart([...cart, product]);
     const newCart = [...cart];
     newCart.push(product);
@@ -175,6 +178,7 @@ export default function Home(props) {
 
 
     console.log(product);
+    console.log(cart);
 
   };
 
