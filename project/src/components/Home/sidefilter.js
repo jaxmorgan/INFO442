@@ -95,7 +95,7 @@ export default function SideFilter(props) {
         <div>
         {/* <form className="form1" > */}
 
-        <img className="magnifying-image" src="..\..\..\img\searchIcon.png" />
+        <img className="magnifying-image" src="..\..\..\img\searchIcon.png" alt="search-icon" />
 
         <div>
         <input className="text-specificity" id="text-input" placeholder="Search for a product..." value={query} type="search" onChange={handleChange} />
@@ -106,6 +106,7 @@ export default function SideFilter(props) {
           <button className='btngo'>
           <div className="btn btn-white" id="apply-search" ref={ref2} onClick={handleSearch}>Go</div>
         </button>
+
 
         </fieldset>
 
@@ -189,7 +190,7 @@ export default function SideFilter(props) {
 
       <div className="green-insight">
         <div>
-          <img className="light-bulb-image" src="..\..\..\img\light-bulbpng.png" />
+          <img className="light-bulb-image" src="..\..\..\img\light-bulbpng.png" alt="light-bulb"/>
           <h4 class="insight-header">Sustainability Insight</h4>
           <p class="insight-content">Furniture is a major cause of air pollution and waste around the
             globe every year. One of the major concerns is that the vast majority

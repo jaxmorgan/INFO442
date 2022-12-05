@@ -13,42 +13,7 @@ import { useState } from 'react';
 
 
 export default function App(props) {
-
-  // useEffect(() => {
-  //   setCart(JSON.parse(window.localStorage.getItem('cart')));
-  // }, []);
-
-  // const addToCart = (item) => {
-  //   // Add to cart
-  //   if (cart.filter(e => e.name === item).length > 0) {
-  //     // if item already in cart, add amount to the item
-  //     cart.map(cartItem => {
-  //       if (cartItem.name === item) {
-  //         cartItem.amount += 1;
-  //       }
-  //     })
-  //   } else {
-  //     setCart((cart) => [
-  //       ...cart,
-  //       { name: item, amount: 1 } // <-- initial amount 1
-  //     ]); 
-  //   }
-  // };
   
-  // useEffect(() => {
-  //   // Update the document title using the browser API
-  //   localStorage.setItem('cart', JSON.stringify(cart))
-  // }, [cart]);
-
-  // const queryString = window.location.search;
-  // const urlParams = new URLSearchParams(queryString);
-  // const queryFilter = {
-  //   query: urlParams.get('query'),
-  //   filter: urlParams.get('filter'),
-  //   supplier: urlParams.get('supplier'),
-  //   range: urlParams.get('range')
-  // }
-
   return (
     <div>
       <Router>

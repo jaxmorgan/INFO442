@@ -105,10 +105,6 @@ const navigateConfirmation = () => {
     );
   };
 
-
-  // const cart = ItemsContent.filter((item) => {props.cart.includes(item.name)})
-  // console.log(cart)
-
   return (
     <div>
       <div className="">

@@ -15,7 +15,7 @@ export default function Item(props) {
 
       <div className="card">
 
-        <img src={props.img} className="card-img-top" alt={props.id}></img>
+        <img src={props.img} className="card-img-top" alt={props.name}></img>
         <div className="card-body">
           <h2 className="card-title">{props.name}</h2>
           <p className="card-text-price">{props.price}</p>

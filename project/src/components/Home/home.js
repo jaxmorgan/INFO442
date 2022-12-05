@@ -12,10 +12,6 @@ export default function Home(props) {
 
   const [products] = useState(ItemsContent);
 
-
-  //console.log(products)
-
-
   let displayedData;
 
 
@@ -32,10 +28,8 @@ export default function Home(props) {
   const applySearch = (search1) => {
 
     setSearch({ query: search1 })
-    //console.log(search.query)
 
   }
-
 
   let searchData = 'none';
 
@@ -51,25 +45,9 @@ export default function Home(props) {
 
   }
 
-
-
-
-
-
-
   if (searchData === 'none') {
-    //console.log('no search')
-    //console.log(search.query)
     displayedData = products;
   } else {
-
-
-    //need a way to filter data here
-    // what in the type box already here
-    //console.log('have search', search.query);
-    //console.log(ItemsContent.filter(show => show.supplier.includes(search.query)));
-
-
     displayedData = products.filter(show => show.supplier.toLowerCase().includes(searchData.toLowerCase()) || show.name.toLowerCase().includes(searchData.toLowerCase()) || show.status.toLowerCase().includes(searchData.toLowerCase()) || show.type.toLowerCase().includes(searchData.toLowerCase()));
   }
 
