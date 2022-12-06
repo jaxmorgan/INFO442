@@ -16,7 +16,7 @@ export default function Items(props) {
 
       <div className="flex-container">
         {props.data.map((element, index) =>
-          <Item key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} alt={product.name} addToCart={addToCart} />
+          <Item key={index} name={element.name} price={element.price} delivery={element.delivery} supplier={element.supplier} supplierLink={element.supplierLink} img={element.img} alt={element.name} addToCart={addToCart} />
         )}
       </div>
     </main>
